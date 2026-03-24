@@ -5,7 +5,7 @@ This project highlights a clean UI, smooth animations, and a strong visual hiera
 
 The design focuses on showcasing services, portfolio, and brand identity in a sleek and impactful way, making it ideal for tech agencies and startups.
 
-**View Live Site** 🔗 https://your-live-link-here.com
+**View Live Site** 🔗 https://nexa-wave-agency.vercel.app/
 
 ---
 
