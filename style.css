@@ -157,7 +157,7 @@ header.add .navRow {
   filter: blur(80px);
   opacity: 0.6;
   background: radial-gradient(circle at 50% 0%, #c500ff, #000000 60%);
-  animation: rotateGlow 8s linear infinite;
+  animation: rotateGlow 5s linear infinite;
 }
 
 @keyframes rotateGlow {
