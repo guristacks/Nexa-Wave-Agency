@@ -7,7 +7,6 @@ The design focuses on showcasing services, portfolio, and brand identity in a sl
 
 **View Live Site** 🔗 https://nexa-wave-agency.vercel.app/
 
----
 
 ## ⭐ Disclaimer
 
@@ -15,27 +14,44 @@ This project is created for educational and portfolio purposes only.
 It is not associated with any real agency.
 
 
----
+## 🎯 Project Purpose
 
-## 📌 Features
+This project is created as a portfolio piece to showcase frontend development skills, UI/UX design sense, and the ability to build modern, high-performance landing pages.
+
+
+## 📌 Features & ⚡ Optimization Techniques
 
 - 💎 Luxury and premium UI design  
+- 🎨 Clean and modern layout   
 - 📱 Fully responsive (Mobile, Tablet, Desktop)  
-- ⚡ Optimized for performance  
-- 🎯 Smooth scrolling experience  
-- 🎨 Clean and modern layout  
-- 🧭 Well-structured sections  
+- 🖼️ Images optimized using modern formats (WebP) 
+- ⚡ Lazy loading implemented for images and media
+- 📦 Minified CSS and JavaScript files
+- 🧠 Efficient DOM structure for better rendering
+- 🚫 Reduced render-blocking resources
+- 🎯 Optimized animations and smooth scrolling
 
 
----
+## 🚀 Performance
 
-## 👨‍💻 Developer
+This website is optimized to deliver fast, smooth, and efficient performance across all devices. It is built with modern best practices to ensure a seamless user experience.
+
+
+## 📊 Lighthouse Scores
+
+💻 Desktop Score <br>
+Performance - 96+ | Accessibility - 98 | Best Practices - 100 | SEO - 100 
+
+📱 Mobile Scrore <br>
+Performance - 96+ | Accessibility - 98 | Best Practices - 100 | SEO - 100 
+
+
+## 👨‍💻 About Developer
 
 **Name:** Gurwinder Singh (Guri Ghumaan)
 **Role:** Frontend Web Developer  
 **Focus:** Creating modern, interactive, and performance-driven web experiences  
 
----
 
 ## 🛠️ Tech Stack
 
@@ -45,14 +61,6 @@ It is not associated with any real agency.
 - GSAP (for animations)  
 - Lenis (for smooth scrolling)
 
----
-
-## 🎯 Project Purpose
-
-This project is created as a portfolio piece to showcase frontend development skills, UI/UX design sense, and the ability to build modern, high-performance landing pages.
-
-
----
 
 ## 📬 Contact
 
@@ -60,7 +68,93 @@ This project is created as a portfolio piece to showcase frontend development sk
 - LinkedIn: https://www.linkedin.com/in/guristacks
 
 
----
+## 🌟 Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 💎 Aurum Luxe Jewellery
+
+Aurum Luxe Jewellery is a modern and premium landing page designed to represent a luxury jewellery brand.  
+This project focuses on elegant design, smooth user experience, and high-end visual aesthetics.
+
+The layout is crafted to deliver a rich and sophisticated feel using minimal design, refined typography, and smooth scrolling interactions.
+
+**View Live Site** 🔗 https://aurum-luxe-jewellery.vercel.app/
+
+
+## ⭐ Disclaimer
+
+This project is created for educational and portfolio purposes only.  
+It is not associated with any real jewellery brand.
+
+
+## 🎯 Project Purpose
+
+This project is created as a portfolio piece to showcase frontend development skills, UI/UX design sense, and the ability to build modern, high-performance landing pages.
+
+
+## 📌 Features & ⚡ Optimization Techniques
+
+- 💎 Luxury and premium UI design  
+- 🎨 Clean and modern layout   
+- 📱 Fully responsive (Mobile, Tablet, Desktop)  
+- 🖼️ Images optimized using modern formats (WebP) 
+- ⚡ Lazy loading implemented for images and media
+- 📦 Minified CSS and JavaScript files
+- 🧠 Efficient DOM structure for better rendering
+- 🚫 Reduced render-blocking resources
+- 🎯 Optimized animations and smooth scrolling
+
+
+## 🚀 Performance
+
+This website is optimized to deliver fast, smooth, and efficient performance across all devices. It is built with modern best practices to ensure a seamless user experience.
+
+
+## 📊 Lighthouse Scores
+
+💻 Desktop Score <br>
+Performance - 96+ | Accessibility - 98 | Best Practices - 100 | SEO - 100 
+
+📱 Mobile Scrore <br>
+Performance - 96+ | Accessibility - 98 | Best Practices - 100 | SEO - 100 
+
+
+## 👨‍💻 About Developer
+
+**Name:** Gurwinder Singh (Guri Ghumaan) <br>
+**Role:** Frontend Web Developer <br>
+**Age:** 21 <br>
+**Focus:** Creating modern, animated, interactive, and performance-driven web experiences.
+
+
+## 🛠️ Tech Stack
+
+- HTML5  
+- CSS3  
+- JavaScript  
+- GSAP (for animations)  
+- Lenis (for smooth scrolling)
+
+
+## 📬 Contact
+
+- GitHub: https://github.com/guristacks
+- LinkedIn: https://www.linkedin.com/in/guristacks
+
 
 ## 🌟 Support
 
