@@ -106,7 +106,7 @@ header {
 }
 .nav li:hover {
   color: #ffffff;
-  background-color: #814ac8;
+  background-color: #5960e8;
 }
 .ri-menu-4-line,
 .ri-close-large-fill {
@@ -156,7 +156,7 @@ header.add .navRow {
   left: -50%;
   filter: blur(80px);
   opacity: 0.6;
-  background: radial-gradient(circle at 50% 0%, #38adad, #000000 60%);
+  background: radial-gradient(circle at 50% 0%, #c500ff, #000000 60%);
   animation: rotateGlow 8s linear infinite;
 }
 
@@ -220,7 +220,7 @@ header.add .navRow {
 }
 .btn-set button:nth-child(1) {
   box-shadow: inset 2px 2px 10px -4px #fff;
-  background-color: #814ac8;
+  background-color: #5960e8;
   color: #fff;
 }
 .btn-set button:hover i{
