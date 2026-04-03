@@ -1,7 +1,5 @@
 // Gsap Timeline
-let tl = gsap.timeline({
-  defaults: { ease: "power2.out", duration: 0.5 },
-});
+let tl = gsap.timeline();
 
 const lenisAnimation = () => {
   let lenis;
@@ -41,6 +39,67 @@ const lenisAnimation = () => {
   });
 };
 
+const loadingAnimation = () => {
+  tl.from(".hero", {
+    delay: 0.5,
+    opacity: 0,
+    duration: 0.5,
+  });
+
+  tl.from("header", {
+    y: -30,
+    opacity: 0,
+    duration: 0.3,
+  });
+
+  if (window.innerWidth < 1024) {
+    tl.from("header i", {
+      y: -20,
+      opacity: 0,
+      duration: 0.3
+    });
+  }
+
+  tl.from("header .logo", {
+    y: -20,
+    opacity: 0,
+    duration: 0.3
+  });
+
+  if (window.innerWidth > 1024) {
+    tl.from("ul li a", {
+      y: -20,
+      opacity: 0,
+      duration: 0.2,
+      stagger: 0.2
+    });
+  }
+
+  tl.from(".hero-content .p1", {
+    y: -30,
+    duration: 0.3,
+    opacity: 0
+  });
+
+  tl.from(".hero-content h1", {
+    y: -30,
+    duration: 0.3,
+    opacity: 0
+  });
+
+  tl.from(".hero-content .p2", {
+    y: -30,
+    duration: 0.3,
+    opacity: 0
+  });
+
+  tl.from(".btn-set", {
+    scale: 0.8,
+    opacity: 0,
+    duration: 0.4,
+  });
+};
+
 const navBarAnimation = () => {
   let menuBtn = document.querySelector(".ri-menu-4-line");
   let closeBtn = document.querySelector(".ri-close-large-fill");
@@ -51,11 +110,8 @@ const navBarAnimation = () => {
     menuBtn.style.display = "none";
     closeBtn.style.display = "block";
 
-    tl.to(header, {
-      height: "fit-content",
-    });
-
-    tl.from(".navCol h2", {
+    gsap.from(".navCol h2", {
+      delay: 0.1,
       y: -30,
       x: -30,
       opacity: 0,
@@ -66,12 +122,13 @@ const navBarAnimation = () => {
 
   closeBtn.addEventListener("click", () => {
     header.classList.remove("add");
-    header.style.height = "4rem";
     menuBtn.style.display = "block";
     closeBtn.style.display = "none";
   });
 };
 
 lenisAnimation();
+
+loadingAnimation();
 
 navBarAnimation();

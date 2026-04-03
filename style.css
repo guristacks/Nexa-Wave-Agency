@@ -6,6 +6,7 @@
 a {
   text-decoration: none;
   color: unset;
+  display: inline-block;
 }
 body {
   font-family: Montserrat, sans-serif;
@@ -45,11 +46,51 @@ li {
 span {
   display: inline-block;
 }
-button{
-  transition: 0.3s ease;
+
+/*------
+ BUTTONS
+ -----*/
+
+.blueBtn {
+  box-shadow: inset 2px 2px 10px -4px #fff;
+  background-color: #5960e8;
+  color: #fff;
 }
-button:active{
+button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 12px 14px;
+  border: unset;
+  border-radius: 8px;
+  font-size: clamp(14px, 15px, 16px);
+  transition: 0.3s ease;
+  display: inline-block;
+  opacity: 1;
+}
+button:active {
   transform: scale(0.9);
+}
+button .text,
+button .hover-text {
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+button .hover-text {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+}
+button:hover .text {
+  transform: translateY(-170%);
+}
+button:hover .hover-text {
+  transform: translateY(-170%);
+}
+button:hover {
+  box-shadow: 0px 0px 50px -10px #fff;
+  transform: scale(1.05);
 }
 
 /*----------
@@ -128,7 +169,7 @@ header {
 }
 header.add {
   padding: 20px 0px;
-  /* height: unset; */
+  height: fit-content;
 }
 header.add .navRow {
   display: flex !important;
@@ -168,7 +209,7 @@ header.add .navRow {
     transform: rotate(360deg);
   }
 }
-.hero-content{
+.hero-content {
   position: relative;
   gap: 30px;
 }
@@ -181,8 +222,7 @@ header.add .navRow {
   line-height: clamp(1.5rem, 1.5rem, 1.5rem);
   color: #ffffffaf;
 }
-.hero-content p:nth-child(1){
-  color: fff;
+.hero-content p:nth-child(1) {
   font-size: 12px;
   padding: 5px 15px;
   width: fit-content;
@@ -191,47 +231,6 @@ header.add .navRow {
 }
 .btn-set {
   gap: 15px;
-}
-.btn-set button {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  padding: 12px 14px;
-  border: unset;
-  border-radius: 8px;
-  font-size: clamp(14px, 15px, 16px);
-}
-.btn-set button .text,
-.btn-set button .hover-text {
-  display: block;
-  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.btn-set button .hover-text {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-}
-.btn-set button:hover .text {
-  transform: translateY(-170%);
-}
-.btn-set button:hover .hover-text {
-  transform: translateY(-170%);
-}
-.btn-set button:nth-child(1) {
-  box-shadow: inset 2px 2px 10px -4px #fff;
-  background-color: #5960e8;
-  color: #fff;
-}
-.btn-set button:hover i{
-  transform: rotate(90deg);
-}
-.btn-set button:hover{
-  box-shadow: 0px 0px 50px -10px #fff;
-  transform: scale(1.05);
-}
-.btn-set button:active{
-  transform: scale(0.9);
 }
 
 @media (max-width: 576px) {
