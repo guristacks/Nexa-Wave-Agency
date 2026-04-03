@@ -378,7 +378,7 @@ header.add .navRow {
  SECTION - 8 TESTIMONIALS 
  ----------------------*/
 
-.testimonialsSec {
+.testimonialSec {
   display: block;
   padding: 50px 0px;
 }
@@ -423,6 +423,9 @@ header.add .navRow {
 
 footer {
   padding-top: 50px;
+}
+.footer-main {
+  padding: 40px 0px;
 }
 .imgcol {
   align-items: baseline;
@@ -479,6 +482,9 @@ footer {
   padding: 15px 0px;
   border-top: 1px solid #ffffff38;
 }
+.Reservecol p {
+  font-size: 13px;
+}
 .linkscol {
   gap: 20px;
 }
@@ -487,7 +493,7 @@ footer {
   color: #fff;
 }
 .signatureCol a {
-  color: #9976ff;
+  color: #cacdff;
   text-decoration: underline;
   font-weight: 500;
 }
@@ -527,6 +533,11 @@ footer {
     gap: 30px;
     padding: 30px 0px;
   }
+  .imgcol {
+    align-items: baseline;
+    gap: 20px;
+    width: 100%;
+  }
   .inputCol {
     align-items: start;
     gap: 15px;
@@ -546,7 +557,10 @@ footer {
     gap: 5px;
   }
   .inputCol input {
-    width: 16rem;
+    width: 20rem;
+  }
+  .footer-main {
+    padding: 20px 0px;
   }
 }
 
@@ -602,5 +616,8 @@ footer {
   }
   .linkscol {
     gap: 10px;
+  }
+  .footer-main {
+    padding: 20px 0px;
   }
 }
