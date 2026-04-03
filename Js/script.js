@@ -300,6 +300,20 @@ const faqsAnimation = () => {
   });
 };
 
+const promoAnimation = () => {
+  gsap.from(".promotion", {
+    opacity: 0,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".promoSec",
+      scroller: "body",
+      start: "top 90%",
+      end: "top 50%",
+      scrub: 2,
+    },
+  });
+};
+
 lenisAnimation();
 
 loadingAnimation();
@@ -323,4 +337,6 @@ pricingAnimation();
 testimonialsAnimation();
 
 faqsAnimation();
+
+promoAnimation();
 
