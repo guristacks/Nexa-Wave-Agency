@@ -5,9 +5,10 @@ const lenisAnimation = () => {
   let lenis;
   let rafFn;
 
-  function initLenis() {
+  const initLenis = () => {
+
     if (window.innerWidth > 1024 && !lenis) {
-      lenis = new Lenis({ duration: 1.2 });
+      lenis = new Lenis({ duration: 2 });
 
       lenis.on("scroll", ScrollTrigger.update);
 
@@ -20,7 +21,7 @@ const lenisAnimation = () => {
     }
   }
 
-  function destroyLenis() {
+  const destroyLenis = () => {
     if (lenis) {
       gsap.ticker.remove(rafFn);
       lenis.destroy();
@@ -40,6 +41,7 @@ const lenisAnimation = () => {
 };
 
 const loadingAnimation = () => {
+
   tl.from(".hero", {
     delay: 0.5,
     opacity: 0,
@@ -127,8 +129,31 @@ const navBarAnimation = () => {
   });
 };
 
+const serviceAnimation = () => {
+  if (window.innerWidth > 1024) {
+    gsap.to(".track", {
+    x: "-30%",
+    duration:10,
+    repeat: -1,
+    yoyo: true,
+    ease: "none",
+  })
+  } else if (window.innerWidth < 768) {
+    gsap.to(".track", {
+    x: "-35%",
+    duration:10,
+    repeat: -1,
+    yoyo: true,
+    ease: "none",
+  })
+  }
+
+}
+
 lenisAnimation();
 
 loadingAnimation();
 
 navBarAnimation();
+
+serviceAnimation();
