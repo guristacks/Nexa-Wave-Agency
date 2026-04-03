@@ -203,8 +203,8 @@ const serviceAnimation = () => {
     scrollTrigger: {
       trigger: ".servicesSec",
       scroller: "body",
-      start: "top 100%",
-      end: "top 40%",
+      start: "top 90%",
+      end: "top 30%",
       scrub: 2,
     },
   });
@@ -218,8 +218,8 @@ const processAnimation = () => {
     scrollTrigger: {
       trigger: ".processSec",
       scroller: "body",
-      start: "top 100%",
-      end: "top 40%",
+      start: "top 90%",
+      end: "top 30%",
       scrub: 2,
     },
   });
@@ -233,8 +233,8 @@ const casesAnimation = () => {
     scrollTrigger: {
       trigger: ".casesSec",
       scroller: "body",
-      start: "top 100%",
-      end: "top 40%",
+      start: "top 90%",
+      end: "top 30%",
       scrub: 2,
     },
   });
@@ -248,8 +248,8 @@ const benefitsAnimation = () => {
     scrollTrigger: {
       trigger: ".benefitsSec",
       scroller: "body",
-      start: "top 100%",
-      end: "top 40%",
+      start: "top 90%",
+      end: "top 30%",
       scrub: 2,
     },
   });
@@ -263,8 +263,8 @@ const pricingAnimation = () => {
     scrollTrigger: {
       trigger: ".pricingSec",
       scroller: "body",
-      start: "top 100%",
-      end: "top 40%",
+      start: "top 90%",
+      end: "top 30%",
       scrub: 2,
     },
   });
@@ -278,8 +278,8 @@ const testimonialsAnimation = () => {
     scrollTrigger: {
       trigger: ".testimonialSec",
       scroller: "body",
-      start: "top 100%",
-      end: "top 40%",
+      start: "top 90%",
+      end: "top 30%",
       scrub: 2,
     },
   });
@@ -293,8 +293,8 @@ const faqsAnimation = () => {
     scrollTrigger: {
       trigger: ".faqSec",
       scroller: "body",
-      start: "top 100%",
-      end: "top 40%",
+      start: "top 90%",
+      end: "top 30%",
       scrub: 2,
     },
   });
