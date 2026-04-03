@@ -129,19 +129,19 @@ const navBarAnimation = () => {
   });
 };
 
-const serviceAnimation = () => {
+const brandsAnimation = () => {
   if (window.innerWidth > 1024) {
     gsap.to(".track", {
-    x: "-30%",
-    duration:10,
+    x: "-60%",
+    duration:20,
     repeat: -1,
     yoyo: true,
     ease: "none",
   })
   } else if (window.innerWidth < 768) {
     gsap.to(".track", {
-    x: "-35%",
-    duration:10,
+    x: "-80%",
+    duration:20,
     repeat: -1,
     yoyo: true,
     ease: "none",
@@ -156,4 +156,4 @@ loadingAnimation();
 
 navBarAnimation();
 
-serviceAnimation();
+brandsAnimation();

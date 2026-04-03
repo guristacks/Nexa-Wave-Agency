@@ -243,22 +243,22 @@ header.add .navRow {
 }
 
 /*------------------
- SECTION - 2 SERVICE 
+ SECTION - 2 BRANDS 
  -----------------*/
 
-.service {
+.brands {
   text-align: center;
   height: 30vh;
 }
-.service h2 {
+.brands h2 {
   font-size: clamp(16px, 16px, 16px);
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .outter {
   position: relative;
   overflow: hidden;
-  width: 70vw;
+  width: 80vw;
   margin: auto;
   padding: 0px 30px;
 }
@@ -276,7 +276,7 @@ header.add .navRow {
   font-size: 20px;
 }
 .inner h3 {
-  font-size: clamp(16px, 5vw, 30px)
+  font-size: clamp(30px, 5vw, 40px)
 }
 .inner h3:nth-child(2), 
 .inner h3:nth-child(4), 
@@ -323,8 +323,8 @@ header.add .navRow {
     display: none;
   }
 
-  /*------------------
- SECTION - 2 SERVICE 
+ /*----------------
+ SECTION - 2 BRANDS 
  -----------------*/
 
   .left-layer, .right-layer{
@@ -352,10 +352,10 @@ header.add .navRow {
     display: none;
   }
 
-  /*------------------
- SECTION - 2 SERVICE 
+ /*----------------
+ SECTION - 2 BRANDS 
  -----------------*/
- 
+
   .left-layer, .right-layer{
     display: none;
   }
