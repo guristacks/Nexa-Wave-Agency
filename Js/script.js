@@ -6,7 +6,6 @@ const lenisAnimation = () => {
   let rafFn;
 
   const initLenis = () => {
-
     if (window.innerWidth > 1024 && !lenis) {
       lenis = new Lenis({ duration: 2 });
 
@@ -19,7 +18,7 @@ const lenisAnimation = () => {
       gsap.ticker.add(rafFn);
       gsap.ticker.lagSmoothing(0);
     }
-  }
+  };
 
   const destroyLenis = () => {
     if (lenis) {
@@ -27,7 +26,7 @@ const lenisAnimation = () => {
       lenis.destroy();
       lenis = null;
     }
-  }
+  };
 
   initLenis();
 
@@ -41,7 +40,6 @@ const lenisAnimation = () => {
 };
 
 const loadingAnimation = () => {
-
   tl.from(".hero", {
     delay: 0.5,
     opacity: 0,
@@ -58,14 +56,14 @@ const loadingAnimation = () => {
     tl.from("header i", {
       y: -20,
       opacity: 0,
-      duration: 0.3
+      duration: 0.3,
     });
   }
 
   tl.from("header .logo", {
     y: -20,
     opacity: 0,
-    duration: 0.3
+    duration: 0.3,
   });
 
   if (window.innerWidth > 1024) {
@@ -73,26 +71,26 @@ const loadingAnimation = () => {
       y: -20,
       opacity: 0,
       duration: 0.2,
-      stagger: 0.1
+      stagger: 0.1,
     });
   }
 
   tl.from(".hero-content .p1", {
     y: -30,
     duration: 0.3,
-    opacity: 0
+    opacity: 0,
   });
 
   tl.from(".hero-content h1", {
     y: -30,
     duration: 0.3,
-    opacity: 0
+    opacity: 0,
   });
 
   tl.from(".hero-content .p2", {
     y: -30,
     duration: 0.3,
-    opacity: 0
+    opacity: 0,
   });
 
   tl.from(".btn-set", {
@@ -106,8 +104,12 @@ const navBarAnimation = () => {
   let menuBtn = document.querySelector(".ri-menu-4-line");
   let closeBtn = document.querySelector(".ri-close-large-fill");
   let header = document.querySelector("header");
+  let navCol = document.querySelector(".navCol");
+  let navLinks = document.querySelectorAll(".navCol a");
 
-  menuBtn.addEventListener("click", () => {
+  // OPEN MENU
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); // important
     header.classList.add("add");
     menuBtn.style.display = "none";
     closeBtn.style.display = "block";
@@ -122,38 +124,82 @@ const navBarAnimation = () => {
     });
   });
 
-  closeBtn.addEventListener("click", () => {
+  // CLOSE MENU (icon)
+  const closeMenu = () => {
     header.classList.remove("add");
     menuBtn.style.display = "block";
     closeBtn.style.display = "none";
+  };
+
+  closeBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    closeMenu();
+  });
+
+  // ✅ 1. Outside click
+  document.addEventListener("click", (e) => {
+    if (
+      header.classList.contains("add") &&
+      !navCol.contains(e.target) &&
+      !menuBtn.contains(e.target)
+    ) {
+      closeMenu();
+    }
+  });
+
+  // ✅ 2. Nav link click
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      closeMenu();
+    });
+  });
+};
+
+const cursorAnimation = () => {
+  let sec = document.querySelector(".heroSec");
+  let cursor = document.querySelector(".cursor");
+
+  sec.addEventListener("mousemove", (dets) => {
+    gsap.to(cursor, {
+      x: dets.x,
+      y: dets.y,
+      opacity: 1,
+    });
+  });
+
+  sec.addEventListener("mouseleave", (dets) => {
+    gsap.to(cursor, {
+      opacity: 0,
+    });
   });
 };
 
 const brandsAnimation = () => {
   if (window.innerWidth > 1024) {
     gsap.to(".track", {
-    x: "-60%",
-    duration:40,
-    repeat: -1,
-    yoyo: true,
-    ease: "none",
-  })
+      x: "-60%",
+      duration: 40,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
   } else if (window.innerWidth < 768) {
     gsap.to(".track", {
-    x: "-80%",
-    duration:50,
-    repeat: -1,
-    yoyo: true,
-    ease: "none",
-  })
+      x: "-80%",
+      duration: 50,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
   }
-
-}
+};
 
 lenisAnimation();
 
 loadingAnimation();
 
 navBarAnimation();
+
+cursorAnimation();
 
 brandsAnimation();
