@@ -1,5 +1,6 @@
-// Gsap Timeline
+// Gsap Timeline & Scroll Trigger
 let tl = gsap.timeline();
+gsap.registerPlugin(ScrollTrigger);
 
 const lenisAnimation = () => {
   let lenis;
@@ -194,6 +195,111 @@ const brandsAnimation = () => {
   }
 };
 
+const serviceAnimation = () => {
+  gsap.from(".servicesSec .allh2, .servicesSec .allh1, .servicesSec .allp", {
+    y: -100,
+    opacity: 0,
+    scale: 1.3,
+    scrollTrigger: {
+      trigger: ".servicesSec",
+      scroller: "body",
+      start: "top 100%",
+      end: "top 40%",
+      scrub: 2,
+    },
+  });
+};
+
+const processAnimation = () => {
+  gsap.from(".processSec .allh2, .processSec .allh1, .processSec .allp", {
+    y: -100,
+    opacity: 0,
+    scale: 1.3,
+    scrollTrigger: {
+      trigger: ".processSec",
+      scroller: "body",
+      start: "top 100%",
+      end: "top 40%",
+      scrub: 2,
+    },
+  });
+};
+
+const casesAnimation = () => {
+  gsap.from(".casesSec .allh2, .casesSec .allh1, .casesSec .allp", {
+    y: -100,
+    opacity: 0,
+    scale: 1.3,
+    scrollTrigger: {
+      trigger: ".casesSec",
+      scroller: "body",
+      start: "top 100%",
+      end: "top 40%",
+      scrub: 2,
+    },
+  });
+};
+
+const benefitsAnimation = () => {
+  gsap.from(".benefitsSec .allh2, .benefitsSec .allh1, .benefitsSec .allp", {
+    y: -100,
+    opacity: 0,
+    scale: 1.3,
+    scrollTrigger: {
+      trigger: ".benefitsSec",
+      scroller: "body",
+      start: "top 100%",
+      end: "top 40%",
+      scrub: 2,
+    },
+  });
+};
+
+const pricingAnimation = () => {
+  gsap.from(".pricingSec .allh2, .pricingSec .allh1, .pricingSec .allp", {
+    y: -100,
+    opacity: 0,
+    scale: 1.3,
+    scrollTrigger: {
+      trigger: ".pricingSec",
+      scroller: "body",
+      start: "top 100%",
+      end: "top 40%",
+      scrub: 2,
+    },
+  });
+};
+
+const testimonialsAnimation = () => {
+  gsap.from(".testimonialSec .allh2, .testimonialSec .allh1, .testimonialSec .allp", {
+    y: -100,
+    opacity: 0,
+    scale: 1.3,
+    scrollTrigger: {
+      trigger: ".testimonialSec",
+      scroller: "body",
+      start: "top 100%",
+      end: "top 40%",
+      scrub: 2,
+    },
+  });
+};
+
+const faqsAnimation = () => {
+  gsap.from(".faqSec .allh2, .faqSec .allh1, .faqSec .allp", {
+    y: -100,
+    opacity: 0,
+    scale: 1.3,
+    scrollTrigger: {
+      trigger: ".faqSec",
+      scroller: "body",
+      start: "top 100%",
+      end: "top 40%",
+      scrub: 2,
+    },
+  });
+};
+
 lenisAnimation();
 
 loadingAnimation();
@@ -203,3 +309,18 @@ navBarAnimation();
 cursorAnimation();
 
 brandsAnimation();
+
+serviceAnimation();
+
+processAnimation();
+
+casesAnimation();
+
+benefitsAnimation();
+
+pricingAnimation();
+
+testimonialsAnimation();
+
+faqsAnimation();
+
