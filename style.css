@@ -192,12 +192,12 @@ header.add .navRow {
  SECTION - 1 HERO 
  ---------------*/
 
-.hero {
+.heroSec {
   text-align: center;
   position: relative;
   overflow: hidden;
 }
-.hero::before {
+.heroSec::before {
   content: "";
   position: absolute;
   width: 200%;
@@ -223,8 +223,9 @@ header.add .navRow {
   gap: 30px;
 }
 .hero-content h1 {
-  font-size: clamp(30px, 5vw, 70px);
+  font-size: clamp(35px, 5vw, 70px);
   line-height: clamp(2.6rem, 8vw, 7vw);
+  font-weight: 600;
 }
 .hero-content p {
   font-size: clamp(14px, 16px, 16px);
@@ -246,13 +247,15 @@ header.add .navRow {
  SECTION - 2 BRANDS 
  -----------------*/
 
-.brands {
+.brandsSec {
+  padding: 50px 0px;
   text-align: center;
-  height: 30vh;
+  height: fit-content;
+  display: block;
 }
-.brands h2 {
+.brandsSec h2 {
   font-size: clamp(16px, 16px, 16px);
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 35px;
 }
 .outter {
@@ -268,18 +271,18 @@ header.add .navRow {
   width: max-content;
   position: relative;
 }
-.inner{
+.inner {
   flex-shrink: 0;
 }
-.inner i{
+.inner i {
   margin-right: 5px;
   font-size: 20px;
 }
 .inner h3 {
-  font-size: clamp(30px, 5vw, 40px)
+  font-size: clamp(30px, 5vw, 40px);
 }
-.inner h3:nth-child(2), 
-.inner h3:nth-child(4), 
+.inner h3:nth-child(2),
+.inner h3:nth-child(4),
 .inner h3:nth-child(6),
 .inner h3:nth-child(8) {
   font-weight: 400;
@@ -303,6 +306,192 @@ header.add .navRow {
   box-shadow: -15px 0px 20px #000000;
 }
 
+/*------------------
+ SECTION - 3 SERVICES 
+ -----------------*/
+.servicesSec {
+  min-height: 100vh;
+  display: block;
+  padding: 50px 0px;
+  text-align: center;
+}
+.allh2 {
+  font-size: clamp(14px, 14px, 16px);
+  font-weight: 500;
+  margin-bottom: 35px;
+  padding: 8px 12px;
+  border: 1px solid #ffffff46;
+  border-radius: 8px;
+  width: fit-content;
+}
+.allh1 {
+  font-size: clamp(24px, 5vw, 50px);
+  line-height: clamp(2rem, 8vw, 5vw);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.allp {
+  font-size: clamp(14px, 16px, 16px);
+  line-height: clamp(1.5rem, 1.5rem, 1.5rem);
+  color: #ffffffaf;
+  text-align: center;
+}
+
+/*----------------------
+ SECTION - 4 OUR PROCESS 
+ ---------------------*/
+
+.processSec {
+  display: block;
+  padding: 50px 0px;
+}
+
+/*-----------------------
+ SECTION - 5 CASE STUDIES 
+ ----------------------*/
+
+.casesSec {
+  display: block;
+  padding: 50px 0px;
+}
+
+/*------------------
+ SECTION - 6 BENEFITS 
+ -----------------*/
+
+.benefitsSec {
+  display: block;
+  padding: 50px 0px;
+}
+
+/*------------------
+ SECTION - 7 PRICING 
+ -----------------*/
+
+.pricingSec {
+  display: block;
+  padding: 50px 0px;
+}
+
+/*-----------------------
+ SECTION - 8 TESTIMONIALS 
+ ----------------------*/
+
+.testimonialsSec {
+  display: block;
+  padding: 50px 0px;
+}
+
+/*-----------------------
+ SECTION - 9 FAQs 
+ ----------------------*/
+
+.faqSec {
+  display: block;
+  padding: 50px 0px;
+}
+
+/*------------------
+ SECTION - 10 PROMO 
+ -----------------*/
+
+.promoSec {
+  height: fit-content;
+  padding: 50px 0px;
+  text-align: center;
+  display: block;
+}
+.promotion {
+  padding: 70px 50px;
+  border-radius: 8px;
+  width: fit-content;
+  margin: auto;
+  background: linear-gradient(130deg, #9976ff, #ffffff14 20% 80%, #9976ff);
+}
+.promotion .allh1 {
+  font-size: clamp(30px, 5vw, 50px);
+  line-height: clamp(2rem, 8vw, 5vw);
+}
+.promotion button {
+  margin-top: 30px;
+}
+
+/*-----
+ FOOTER
+ -----*/
+
+footer {
+  padding-top: 50px;
+}
+.imgcol {
+  align-items: baseline;
+  gap: 30px;
+  width: 100%;
+}
+.imgcol img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+.imgcol .logo {
+  color: #fff;
+  font-size: clamp(20px, 3vh, 30px);
+}
+.inputCol {
+  align-items: end;
+  gap: 30px;
+}
+.inputCol label {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.inputCol input {
+  width: 19rem;
+  height: 3rem;
+  background-color: #343434;
+  color: #fff;
+  border: unset;
+  border-radius: 8px;
+  padding: 0px 100px 0px 15px;
+}
+.inputCol input::placeholder {
+  color: #fff;
+  font-family: Montserrat;
+}
+.innerInput {
+  position: relative;
+}
+.innerInput button {
+  position: absolute;
+  top: 8%;
+  right: 3px;
+  font-size: 14px;
+  background-color: #5960e8;
+  color: #ffffff;
+  font-weight: 400;
+}
+.signrow {
+  margin-top: 20px;
+  padding: 15px 0px;
+  border-top: 1px solid #ffffff38;
+}
+.linkscol {
+  gap: 20px;
+}
+.linkscol i {
+  font-size: 25px;
+  color: #fff;
+}
+.signatureCol a {
+  color: #9976ff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
   /*------
   Header 
@@ -323,12 +512,41 @@ header.add .navRow {
     display: none;
   }
 
- /*----------------
+  /*----------------
  SECTION - 2 BRANDS 
  -----------------*/
 
-  .left-layer, .right-layer{
+  .left-layer,
+  .right-layer {
     display: none;
+  }
+
+  /* FOOTER */
+  .footer-main {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0px;
+  }
+  .inputCol {
+    align-items: start;
+    gap: 15px;
+    width: 100%;
+  }
+  .inputCol label {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .signatureCol,
+  .linkscol,
+  .Reservecol {
+    width: 33%;
+  }
+  .linkscol {
+    gap: 5px;
+  }
+  .inputCol input {
+    width: 16rem;
   }
 }
 
@@ -352,11 +570,37 @@ header.add .navRow {
     display: none;
   }
 
- /*----------------
+  /*----------------
  SECTION - 2 BRANDS 
  -----------------*/
 
-  .left-layer, .right-layer{
+  .left-layer,
+  .right-layer {
     display: none;
+  }
+
+  /* FOOTER */
+  .footer-main {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0px;
+  }
+  .inputCol {
+    align-items: start;
+    gap: 15px;
+    width: 100%;
+  }
+  .inputCol label {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .signatureCol,
+  .linkscol,
+  .Reservecol {
+    width: 33%;
+  }
+  .linkscol {
+    gap: 10px;
   }
 }

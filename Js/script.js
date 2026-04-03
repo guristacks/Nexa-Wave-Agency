@@ -73,7 +73,7 @@ const loadingAnimation = () => {
       y: -20,
       opacity: 0,
       duration: 0.2,
-      stagger: 0.2
+      stagger: 0.1
     });
   }
 
@@ -133,7 +133,7 @@ const brandsAnimation = () => {
   if (window.innerWidth > 1024) {
     gsap.to(".track", {
     x: "-60%",
-    duration:20,
+    duration:40,
     repeat: -1,
     yoyo: true,
     ease: "none",
@@ -141,7 +141,7 @@ const brandsAnimation = () => {
   } else if (window.innerWidth < 768) {
     gsap.to(".track", {
     x: "-80%",
-    duration:20,
+    duration:50,
     repeat: -1,
     yoyo: true,
     ease: "none",
