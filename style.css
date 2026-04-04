@@ -414,10 +414,10 @@ header.add .navRow {
 }
 .Reviewrow,
 .Reviewrow2 {
-  gap: 30px;
+  gap: 15px;
   padding: 20px 15px;
   width: 500px;
-  height: 250px;
+  height: 225px;
   align-items: baseline;
   border: 1px solid #ffffff40;
   border-radius: 8px;
@@ -434,7 +434,7 @@ header.add .navRow {
 .msg p {
   font-size: 15px;
   line-height: 1.5rem;
-  color: #fff;
+  color: #ffffffce;
 }
 .Personrow {
   gap: 15px;
@@ -656,10 +656,9 @@ footer {
   
   .Reviewrow, .Reviewrow2 {
     width: 89vw;
-    height: fit-content;
     flex-shrink: 0;
     white-space: normal;
-    height: 280px;
+    height: 255px;
   }
 
   /*---------------
