@@ -321,7 +321,7 @@ const testimonialsAnimation = () => {
     });
   }
 
-  if (window.innerWidth > 768 && window.innerWidth < 1024) {
+  if (window.innerWidth > 767 && window.innerWidth < 1025) {
     gsap.to(".Reviewrow", {
       x: "-250%",
       duration: 20,
@@ -341,7 +341,7 @@ const testimonialsAnimation = () => {
     });
   }
 
-  if (window.innerWidth > 768 && window.innerWidth < 1024) {
+  if (window.innerWidth > 767 && window.innerWidth < 1025) {
     gsap.to(".Reviewrow2", {
       x: "250%",
       duration: 20,
