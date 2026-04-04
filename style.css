@@ -468,7 +468,7 @@ header.add .navRow {
   height: fit-content;
   display: block;
   padding: 50px 0px;
-  background: linear-gradient(180deg, #0000, #00fffc18, #000000);
+  background: linear-gradient(180deg, #0000, #a1fffd18, #000000);
 }
 details summary {
   list-style: none;
@@ -477,14 +477,13 @@ details summary::-webkit-details-marker {
   display: none;
 }
 .all-ques {
-  border: 1px solid #ffffff2e;
+  border: 1px solid #ffffff20;
   width: 60vw;
   margin: auto;
   padding: 20px 15px;
   border-radius: 8px;
-  background: linear-gradient(135deg, #000, #1d23ff14 25% 35%, #000);
+  background: linear-gradient(135deg, #000, #ffffff0c 25% 35%, #000);
   margin-bottom: 30px;
-  box-shadow: inset 2px 2px 5px -4px #fff;
 }
 .que h3 {
   font-weight: 500;
