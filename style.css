@@ -482,7 +482,7 @@ details summary::-webkit-details-marker {
   margin: auto;
   padding: 20px 15px;
   border-radius: 8px;
-  background: linear-gradient(135deg, #000, #7878780c 25% 35%, #000);
+  background: linear-gradient(135deg, #000, #4848480c 25% 35%, #000);
   margin-bottom: 30px;
 }
 .que h3 {
