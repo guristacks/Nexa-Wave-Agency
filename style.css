@@ -468,7 +468,7 @@ header.add .navRow {
   height: fit-content;
   display: block;
   padding: 50px 0px;
-  background: linear-gradient(180deg, #000000, #00fffb10 40% 60%, #000000);
+  background: linear-gradient(180deg, #000000, #00fffb0a 40% 60%, #000000);
 }
 details summary {
   list-style: none;
