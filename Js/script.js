@@ -268,6 +268,63 @@ const pricingAnimation = () => {
       scrub: 2,
     },
   });
+
+  if (window.innerWidth > 1024) {
+    gsap.from(".landing, .elite, .custom", {
+    opacity: 0,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".pricingSec",
+      scroller: "body",
+      start: "top 30%",
+      end: "top 10%",
+      scrub: 2,
+    },
+  });
+  }
+
+  if (window.innerWidth < 768) {
+    gsap.from(".landing", {
+    opacity: 0,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".landing",
+      scroller: "body",
+      start: "top 70%",
+      end: "top 50%",
+      scrub: 2,
+    },
+  });
+  }
+
+  if (window.innerWidth < 768) {
+    gsap.from(".elite", {
+    opacity: 0,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".elite",
+      scroller: "body",
+      start: "top 70%",
+      end: "top 50%",
+      scrub: 2,
+    },
+  });
+  }
+
+  if (window.innerWidth < 768) {
+    gsap.from(".custom", {
+    opacity: 0,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".custom",
+      scroller: "body",
+      start: "top 70%",
+      end: "top 50%",
+      scrub: 2,
+    },
+  });
+  }
+
 };
 
 const testimonialsAnimation = () => {

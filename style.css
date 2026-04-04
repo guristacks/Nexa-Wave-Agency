@@ -390,6 +390,89 @@ header.add .navRow {
 .pricingSec {
   display: block;
   padding: 50px 0px;
+  height: fit-content;
+}
+.range {
+  align-items: baseline;
+}
+.landing,
+.elite,
+.custom {
+  text-align: start;
+  align-items: baseline;
+  height: fit-content;
+  padding: 20px 15px;
+  border: 1px solid #ffffff48;
+  border-radius: 8px;
+  width: 32%;
+  gap: 10px;
+}
+.landing,
+.custom {
+  background: radial-gradient(
+    circle at 50% 160%,
+    #5960e88e 0%,
+    transparent 60%
+  );
+}
+.heading {
+  font-size: 20px;
+  color: #cbcbcb;
+  font-weight: 600;
+}
+.price {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+.description {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.7rem;
+}
+.landing button,
+.custom button {
+  width: 90%;
+  background-color: #ffffff1a;
+  color: #fff;
+  padding: 9px 0px;
+  border: 1px solid #ffffff3d;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.elite button {
+  width: 90%;
+  background-color: #5960e8;
+  color: #fff;
+  padding: 9px 0px;
+  border: 1px solid #ffffff3d;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sub-head {
+  font-size: 16px;
+  color: #cbcbcb;
+  margin-bottom: 10px;
+}
+.landing h4,
+.elite h4,
+.custom h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7rem;
+}
+.elite {
+  background: radial-gradient(
+    circle at 50% -40%,
+    #f308ff80 0%,
+    transparent 60%
+  );
+}
+.ri-check-fill {
+  font-size: 14px;
+  font-weight: 100;
+  margin-right: 5px;
 }
 
 /*-----------------------
@@ -460,9 +543,9 @@ header.add .navRow {
   font-size: 12px;
 }
 
-/*-----------------------
+/*---------------
  SECTION - 9 FAQs 
- ----------------------*/
+ --------------*/
 
 .faqSec {
   height: fit-content;
@@ -541,6 +624,7 @@ details[open] i {
 
 footer {
   padding-top: 50px;
+  user-select: none;
 }
 .footer-main {
   padding: 40px 0px;
@@ -650,11 +734,35 @@ footer {
     display: none;
   }
 
+  /*-----------------
+  SECTION - 7 PRICING 
+  -----------------*/
+  .range {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .landing,
+  .elite,
+  .custom {
+    width: 100%;
+  }
+  .description {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6rem;
+  }
+  .landing h4,
+  .custom h4,
+  .elite h4 {
+    font-size: 16px;
+  }
+
   /*----------------------
   SECTION - 8 TESTIMONIALS 
   ----------------------*/
-  
-  .Reviewrow, .Reviewrow2 {
+
+  .Reviewrow,
+  .Reviewrow2 {
     width: 89vw;
     flex-shrink: 0;
     white-space: normal;
@@ -740,6 +848,20 @@ footer {
   .left-layer,
   .right-layer {
     display: none;
+  }
+
+  /*-----------------
+  SECTION - 7 PRICING 
+  -----------------*/
+  .range {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .landing,
+  .elite,
+  .custom {
+    width: 70%;
+    margin: auto;
   }
 
   /*---------------
