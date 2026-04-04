@@ -353,7 +353,7 @@ const testimonialsAnimation = () => {
 
   if (window.innerWidth < 768) {
     gsap.to(".Reviewrow", {
-      x: "-350%",
+      x: "-340%",
       duration: 20,
       repeat: -1,
       yoyo: true,
@@ -363,7 +363,7 @@ const testimonialsAnimation = () => {
 
   if (window.innerWidth < 768) {
     gsap.to(".Reviewrow2", {
-      x: "350%",
+      x: "340%",
       duration: 20,
       repeat: -1,
       yoyo: true,

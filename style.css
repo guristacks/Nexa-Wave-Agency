@@ -423,7 +423,7 @@ header.add .navRow {
   border-radius: 8px;
   flex-shrink: 0;
   white-space: normal;
-  background: linear-gradient(135deg, #1100ff19, #000000, #ee00ff1f);
+  background: linear-gradient(135deg, #00ffff19, #000000, #ee00ff16);
 }
 .stars {
   gap: 5px;
