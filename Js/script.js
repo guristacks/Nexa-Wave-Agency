@@ -296,7 +296,7 @@ const faqsAnimation = () => {
     scrollTrigger: {
       trigger: ".faqSec",
       scroller: "body",
-      start: "top 50%",
+      start: "top 90%",
       end: "top 30%",
       scrub: 2,
     },
@@ -309,7 +309,7 @@ const faqsAnimation = () => {
     scrollTrigger: {
       trigger: ".faqSec",
       scroller: "body",
-      start: "top 90%",
+      start: "top 50%",
       end: "top 20%",
       scrub: 2,
     },
