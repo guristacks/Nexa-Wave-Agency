@@ -301,6 +301,19 @@ const faqsAnimation = () => {
       scrub: 2,
     },
   });
+
+  gsap.from(".all-ques", {
+    opacity: 0,
+    scale: 0.7,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".faqSec",
+      scroller: "body",
+      start: "top 90%",
+      end: "top 20%",
+      scrub: 2,
+    },
+  });
 };
 
 const promoAnimation = () => {
