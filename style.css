@@ -399,6 +399,65 @@ header.add .navRow {
 .testimonialSec {
   display: block;
   padding: 50px 0px;
+  height: fit-content;
+}
+.outter-wraper,
+.outter-wraper2 {
+  width: 100%;
+  padding: 10px 0px;
+  overflow-x: hidden;
+  gap: 40px;
+  white-space: nowrap;
+}
+.outter-wraper2 {
+  justify-content: flex-end;
+}
+.Reviewrow,
+.Reviewrow2 {
+  gap: 30px;
+  padding: 20px 15px;
+  width: 500px;
+  height: 250px;
+  align-items: baseline;
+  border: 1px solid #ffffff40;
+  border-radius: 8px;
+  flex-shrink: 0;
+  white-space: normal;
+  background: linear-gradient(135deg, #1506ff21, #00000026, #ec00ff29);
+}
+.stars {
+  gap: 5px;
+}
+.stars i {
+  color: goldenrod;
+}
+.msg p {
+  font-size: 15px;
+  line-height: 1.5rem;
+  color: #fff;
+}
+.Personrow {
+  gap: 15px;
+}
+.person img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #ffffff4a;
+  object-position: top;
+}
+.Personcol {
+  gap: 5px;
+  align-items: baseline;
+}
+.Personrow h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.Personrow p {
+  font-weight: 500;
+  font-size: 12px;
 }
 
 /*-----------------------
@@ -409,6 +468,7 @@ header.add .navRow {
   height: fit-content;
   display: block;
   padding: 50px 0px;
+  background: linear-gradient(180deg, #0000, #00fffc18, #000000);
 }
 details summary {
   list-style: none;
@@ -422,8 +482,9 @@ details summary::-webkit-details-marker {
   margin: auto;
   padding: 20px 15px;
   border-radius: 8px;
-  background: linear-gradient(135deg, #000, #ffffff26 25% 35%, #000);
+  background: linear-gradient(135deg, #000, #1d23ff14 25% 35%, #000);
   margin-bottom: 30px;
+  box-shadow: inset 2px 2px 5px -4px #fff;
 }
 .que h3 {
   font-weight: 500;
@@ -432,6 +493,7 @@ details summary::-webkit-details-marker {
 .ans p {
   font-size: 16px;
   line-height: 1.6rem;
+  color: #d1d1d1;
 }
 summary {
   cursor: pointer;
@@ -587,6 +649,18 @@ footer {
   .left-layer,
   .right-layer {
     display: none;
+  }
+
+  /*----------------------
+  SECTION - 8 TESTIMONIALS 
+  ----------------------*/
+  
+  .Reviewrow, .Reviewrow2 {
+    width: 89vw;
+    height: fit-content;
+    flex-shrink: 0;
+    white-space: normal;
+    height: 280px;
   }
 
   /*---------------

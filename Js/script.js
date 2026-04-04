@@ -286,6 +286,90 @@ const testimonialsAnimation = () => {
       },
     },
   );
+
+  gsap.from(".Reviewrow", {
+    opacity: 0,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".testimonialSec",
+      scroller: "body",
+      start: "top 50%",
+      end: "top 20%",
+      scrub: 2,
+    },
+  });
+
+  gsap.from(".Reviewrow2", {
+    opacity: 0,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".testimonialSec",
+      scroller: "body",
+      start: "top 20%",
+      end: "top -10%",
+      scrub: 2,
+    },
+  });
+
+  if (window.innerWidth > 1024) {
+    gsap.to(".Reviewrow", {
+      x: "-170%",
+      duration: 20,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
+  }
+
+  if (window.innerWidth > 768 && window.innerWidth < 1024) {
+    gsap.to(".Reviewrow", {
+      x: "-250%",
+      duration: 20,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
+  }
+
+  if (window.innerWidth > 1024) {
+    gsap.to(".Reviewrow2", {
+      x: "170%",
+      duration: 20,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
+  }
+
+  if (window.innerWidth > 768 && window.innerWidth < 1024) {
+    gsap.to(".Reviewrow2", {
+      x: "250%",
+      duration: 20,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
+  }
+
+  if (window.innerWidth < 768) {
+    gsap.to(".Reviewrow", {
+      x: "-350%",
+      duration: 20,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
+  }
+
+  if (window.innerWidth < 768) {
+    gsap.to(".Reviewrow2", {
+      x: "350%",
+      duration: 20,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
+  }
 };
 
 const faqsAnimation = () => {
