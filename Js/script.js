@@ -271,18 +271,21 @@ const pricingAnimation = () => {
 };
 
 const testimonialsAnimation = () => {
-  gsap.from(".testimonialSec .allh2, .testimonialSec .allh1, .testimonialSec .allp", {
-    y: -100,
-    opacity: 0,
-    scale: 1.3,
-    scrollTrigger: {
-      trigger: ".testimonialSec",
-      scroller: "body",
-      start: "top 90%",
-      end: "top 30%",
-      scrub: 2,
+  gsap.from(
+    ".testimonialSec .allh2, .testimonialSec .allh1, .testimonialSec .allp",
+    {
+      y: -100,
+      opacity: 0,
+      scale: 1.3,
+      scrollTrigger: {
+        trigger: ".testimonialSec",
+        scroller: "body",
+        start: "top 90%",
+        end: "top 30%",
+        scrub: 2,
+      },
     },
-  });
+  );
 };
 
 const faqsAnimation = () => {
@@ -339,4 +342,3 @@ testimonialsAnimation();
 faqsAnimation();
 
 promoAnimation();
-

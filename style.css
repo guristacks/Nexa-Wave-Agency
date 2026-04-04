@@ -296,7 +296,7 @@ header.add .navRow {
   font-size: 20px;
 }
 .inner h3 {
-  font-size: clamp(30px, 5vw, 40px);
+  font-size: clamp(25px, 5vw, 40px);
 }
 .inner h3:nth-child(2),
 .inner h3:nth-child(4),
@@ -349,6 +349,7 @@ header.add .navRow {
   margin-bottom: 30px;
 }
 .allp {
+  margin-bottom: 50px;
   font-size: clamp(14px, 16px, 16px);
   line-height: clamp(1.5rem, 1.5rem, 1.5rem);
   color: #ffffffaf;
@@ -405,8 +406,47 @@ header.add .navRow {
  ----------------------*/
 
 .faqSec {
+  height: fit-content;
   display: block;
   padding: 50px 0px;
+}
+details summary {
+  list-style: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+.all-ques {
+  border: 1px solid #ffffff2e;
+  width: 60vw;
+  margin: auto;
+  padding: 20px 15px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #000, #ffffff26 25% 35%, #000);
+  margin-bottom: 30px;
+}
+.que h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.ans p {
+  font-size: 16px;
+  line-height: 1.6rem;
+}
+summary {
+  cursor: pointer;
+}
+.ans {
+  margin-top: 20px;
+  padding: 20px 0px;
+  border-top: 1px solid #ffffff47;
+}
+details i {
+  transition: 0.3s ease;
+  font-size: 20px;
+}
+details[open] i {
+  transform: rotate(180deg);
 }
 
 /*------------------
@@ -447,7 +487,7 @@ footer {
 .imgcol {
   align-items: baseline;
   gap: 30px;
-  width: 100%;
+  width: 50%;
 }
 .imgcol img {
   width: 50px;
@@ -463,6 +503,7 @@ footer {
 .inputCol {
   align-items: end;
   gap: 30px;
+  width: 50%;
 }
 .inputCol label {
   font-size: 30px;
@@ -470,7 +511,7 @@ footer {
   color: #fff;
 }
 .inputCol input {
-  width: 19rem;
+  width: clamp(100%, 100%, 100%);
   height: 3rem;
   background-color: #343434;
   color: #fff;
@@ -501,7 +542,7 @@ footer {
   border-top: 1px solid #ffffff38;
 }
 .Reservecol p {
-  font-size: 13px;
+  font-size: 14px;
 }
 .linkscol {
   gap: 20px;
@@ -548,7 +589,23 @@ footer {
     display: none;
   }
 
-  /* FOOTER */
+  /*---------------
+  SECTION - 9 FAQs 
+  --------------*/
+
+  .all-ques {
+    width: unset;
+    margin-bottom: 20px;
+  }
+  .ans p {
+    font-size: 15px;
+    line-height: 1.6rem;
+  }
+
+  /*-----
+  FOOTER
+  ------*/
+
   .footer-main {
     flex-direction: column;
     gap: 30px;
@@ -569,16 +626,12 @@ footer {
     font-weight: 600;
     color: #fff;
   }
-  .signatureCol,
-  .linkscol,
-  .Reservecol {
-    width: 33%;
+  .signrow {
+    flex-direction: column;
+    gap: 10px;
   }
   .linkscol {
     gap: 5px;
-  }
-  .inputCol input {
-    width: 20rem;
   }
   .footer-main {
     padding: 20px 0px;
@@ -608,38 +661,30 @@ footer {
     display: none;
   }
 
-  /*----------------
- SECTION - 2 BRANDS 
- -----------------*/
+  /*-----------------
+  SECTION - 2 BRANDS 
+  ----------------*/
 
   .left-layer,
   .right-layer {
     display: none;
   }
 
-  /* FOOTER */
-  .footer-main {
-    flex-direction: column;
-    gap: 30px;
-    padding: 30px 0px;
+  /*---------------
+  SECTION - 9 FAQs 
+  --------------*/
+  .all-ques {
+    width: 70vw;
   }
-  .inputCol {
-    align-items: start;
-    gap: 15px;
-    width: 100%;
-  }
+
+  /*-----
+  FOOTER
+  ------*/
+
   .inputCol label {
     font-size: 25px;
     font-weight: 600;
     color: #fff;
-  }
-  .signatureCol,
-  .linkscol,
-  .Reservecol {
-    width: 33%;
-  }
-  .linkscol {
-    gap: 10px;
   }
   .footer-main {
     padding: 20px 0px;
