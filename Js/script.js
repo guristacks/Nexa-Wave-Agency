@@ -257,15 +257,14 @@ const benefitsAnimation = () => {
 
   gsap.from(".box", {
     opacity: 0,
-    y: 100,
+    y: 50,
     scale: 0.7,
     ease: "power2.out",
-    duration: 0.5,
     scrollTrigger: {
       trigger: ".box",
       scroller: "body",
-      start: "top 80%",
-      end: "top 60%",
+      start: "top 90%",
+      end: "top 70%",
       scrub: 2,
     },
   });
