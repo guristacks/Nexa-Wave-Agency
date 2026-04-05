@@ -292,8 +292,8 @@ const pricingAnimation = () => {
       scrollTrigger: {
         trigger: ".pricingSec",
         scroller: "body",
-        start: "top 30%",
-        end: "top 10%",
+        start: "top 90%",
+        end: "top 70%",
         scrub: 2,
       },
     });
