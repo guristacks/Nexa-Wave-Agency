@@ -363,6 +363,54 @@ header.add .navRow {
 .processSec {
   display: block;
   padding: 50px 0px;
+  height: fit-content;
+}
+.bothrow {
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+}
+.Processcol {
+  gap: 30px;
+}
+.process {
+  padding: 30px;
+  align-items: flex-start;
+  gap: 15px;
+  border: 1px solid #ffffff1f;
+  border-radius: 8px;
+  width: 100%;
+  background: radial-gradient(#ffffff2a, #0000000d);
+}
+.process h4 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border: 1px solid #ffffff1f;
+  border-radius: 8px;
+}
+.process h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.process p {
+  font-size: 15px;
+  line-height: 1.6rem;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+.process-video {
+  height: 180px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ffffff2d;
+}
+.process-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /*-----------------------
@@ -408,7 +456,6 @@ header.add .navRow {
   line-height: 1.5rem;
   font-size: 15px;
 }
-
 
 /*------------------
  SECTION - 7 PRICING 
@@ -800,13 +847,23 @@ footer {
   }
 
   /*------------------
+  SECTION - 4 PROCESS 
+  ------------------*/
+  .Processcol {
+    flex-direction: column;
+  }
+  .bothrow {
+    width: 100%;
+  }
+
+  /*------------------
   SECTION - 6 BENEFITS 
   ------------------*/
   .firstrow {
     flex-direction: column;
-    gap: 19px;
+    gap: 30px;
   }
-  .box{
+  .box {
     width: 100%;
   }
 
@@ -926,6 +983,15 @@ footer {
     display: none;
   }
 
+  /*------------------
+  SECTION - 4 PROCESS 
+  ------------------*/
+
+  .bothrow {
+    gap: 30px;
+    width: 100%;
+    margin: auto;
+  }
 
   /*------------------
   SECTION - 6 BENEFITS 
@@ -934,10 +1000,9 @@ footer {
     flex-direction: column;
     gap: 19px;
   }
-  .box{
+  .box {
     width: 70%;
   }
-
 
   /*-----------------
   SECTION - 7 PRICING 

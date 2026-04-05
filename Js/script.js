@@ -223,6 +223,106 @@ const processAnimation = () => {
       scrub: 2,
     },
   });
+
+  gsap.from(".step1", {
+    opacity: 0,
+    y: 50,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".step1",
+      scroller: "body",
+      top: "top 70%",
+      end: "top 60%",
+      scrub: 2,
+    },
+  });
+
+  gsap.from(".step2", {
+    opacity: 0,
+    y: 50,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".step2",
+      scroller: "body",
+      top: "top 70%",
+      end: "top 60%",
+      scrub: 2,
+    },
+  });
+
+  gsap.from(".step3", {
+    opacity: 0,
+    y: 50,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".step3",
+      scroller: "body",
+      top: "top 70%",
+      end: "top 60%",
+      scrub: 2,
+    },
+  });
+
+  gsap.from(".step4", {
+    opacity: 0,
+    y: 50,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".step4",
+      scroller: "body",
+      top: "top 70%",
+      end: "top 60%",
+      scrub: 2,
+    },
+  });
+
+  // gsap.from(".process .step1,", {
+  //   opacity: 0,
+  //   scale: 0.7,
+  //   scrollTrigger: {
+  //     trigger: ".process .step1",
+  //     scroller: "body",
+  //     start: "top 70%",
+  //     end: "top 50%",
+  //     scrub: 2,
+  //   },
+  // });
+
+  // gsap.from(".process .step2,", {
+  //   opacity: 0,
+  //   scale: 0.7,
+  //   scrollTrigger: {
+  //     trigger: ".process .step2",
+  //     scroller: "body",
+  //     start: "top 70%",
+  //     end: "top 50%",
+  //     scrub: 2,
+  //   },
+  // });
+
+  // gsap.from(".process .step3,", {
+  //   opacity: 0,
+  //   scale: 0.7,
+  //   scrollTrigger: {
+  //     trigger: ".process .step3",
+  //     scroller: "body",
+  //     start: "top 70%",
+  //     end: "top 50%",
+  //     scrub: 2,
+  //   },
+  // });
+
+  // gsap.from(".process .step4,", {
+  //   opacity: 0,
+  //   scale: 0.7,
+  //   scrollTrigger: {
+  //     trigger: ".process .step4",
+  //     scroller: "body",
+  //     start: "top 70%",
+  //     end: "top 50%",
+  //     scrub: 2,
+  //   },
+  // });
 };
 
 const casesAnimation = () => {
@@ -241,7 +341,6 @@ const casesAnimation = () => {
 };
 
 const benefitsAnimation = () => {
-
   gsap.from(".benefitsSec .allh2, .benefitsSec .allh1, .benefitsSec .allp", {
     y: -100,
     opacity: 0,
@@ -268,22 +367,24 @@ const benefitsAnimation = () => {
       scrub: 2,
     },
   });
-
 };
 
 const pricingAnimation = () => {
-  gsap.from(".pricingSec .allh2, .pricingSec .allh1, .pricingSec .allp, .pricingMethod", {
-    y: -100,
-    opacity: 0,
-    scale: 1.3,
-    scrollTrigger: {
-      trigger: ".pricingSec",
-      scroller: "body",
-      start: "top 90%",
-      end: "top 30%",
-      scrub: 2,
+  gsap.from(
+    ".pricingSec .allh2, .pricingSec .allh1, .pricingSec .allp, .pricingMethod",
+    {
+      y: -100,
+      opacity: 0,
+      scale: 1.3,
+      scrollTrigger: {
+        trigger: ".pricingSec",
+        scroller: "body",
+        start: "top 90%",
+        end: "top 30%",
+        scrub: 2,
+      },
     },
-  });
+  );
 
   if (window.innerWidth > 1024) {
     gsap.from(".landing, .elite, .custom", {
