@@ -256,7 +256,7 @@ const benefitsAnimation = () => {
 };
 
 const pricingAnimation = () => {
-  gsap.from(".pricingSec .allh2, .pricingSec .allh1, .pricingSec .allp", {
+  gsap.from(".pricingSec .allh2, .pricingSec .allh1, .pricingSec .allp, .pricingMethod", {
     y: -100,
     opacity: 0,
     scale: 1.3,
