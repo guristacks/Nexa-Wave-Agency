@@ -264,8 +264,8 @@ const benefitsAnimation = () => {
     scrollTrigger: {
       trigger: ".box",
       scroller: "body",
-      start: "top 70%",
-      end: "top 50%",
+      start: "top 80%",
+      end: "top 60%",
       scrub: 2,
     },
   });
