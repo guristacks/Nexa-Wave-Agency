@@ -208,6 +208,58 @@ const serviceAnimation = () => {
       scrub: 2,
     },
   });
+
+  gsap.from(".serv1", {
+    opacity: 0,
+    y: 50,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".serv1",
+      scroller: "body",
+      top: "top 70%",
+      end: "top 60%",
+      scrub: 2,
+    },
+  });
+
+  gsap.from(".serv2", {
+    opacity: 0,
+    y: 50,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".serv2",
+      scroller: "body",
+      top: "top 70%",
+      end: "top 60%",
+      scrub: 2,
+    },
+  });
+
+  gsap.from(".serv3", {
+    opacity: 0,
+    y: 50,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".serv3",
+      scroller: "body",
+      top: "top 70%",
+      end: "top 60%",
+      scrub: 2,
+    },
+  });
+
+  gsap.from(".serv4", {
+    opacity: 0,
+    y: 50,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".serv4",
+      scroller: "body",
+      top: "top 70%",
+      end: "top 60%",
+      scrub: 2,
+    },
+  });
 };
 
 const processAnimation = () => {
@@ -276,69 +328,22 @@ const processAnimation = () => {
     },
   });
 
-  // gsap.from(".process .step1,", {
-  //   opacity: 0,
-  //   scale: 0.7,
-  //   scrollTrigger: {
-  //     trigger: ".process .step1",
-  //     scroller: "body",
-  //     start: "top 70%",
-  //     end: "top 50%",
-  //     scrub: 2,
-  //   },
-  // });
-
-  // gsap.from(".process .step2,", {
-  //   opacity: 0,
-  //   scale: 0.7,
-  //   scrollTrigger: {
-  //     trigger: ".process .step2",
-  //     scroller: "body",
-  //     start: "top 70%",
-  //     end: "top 50%",
-  //     scrub: 2,
-  //   },
-  // });
-
-  // gsap.from(".process .step3,", {
-  //   opacity: 0,
-  //   scale: 0.7,
-  //   scrollTrigger: {
-  //     trigger: ".process .step3",
-  //     scroller: "body",
-  //     start: "top 70%",
-  //     end: "top 50%",
-  //     scrub: 2,
-  //   },
-  // });
-
-  // gsap.from(".process .step4,", {
-  //   opacity: 0,
-  //   scale: 0.7,
-  //   scrollTrigger: {
-  //     trigger: ".process .step4",
-  //     scroller: "body",
-  //     start: "top 70%",
-  //     end: "top 50%",
-  //     scrub: 2,
-  //   },
-  // });
 };
 
-const casesAnimation = () => {
-  gsap.from(".casesSec .allh2, .casesSec .allh1, .casesSec .allp", {
-    y: -100,
-    opacity: 0,
-    scale: 1.3,
-    scrollTrigger: {
-      trigger: ".casesSec",
-      scroller: "body",
-      start: "top 90%",
-      end: "top 30%",
-      scrub: 2,
-    },
-  });
-};
+// const casesAnimation = () => {
+//   gsap.from(".casesSec .allh2, .casesSec .allh1, .casesSec .allp", {
+//     y: -100,
+//     opacity: 0,
+//     scale: 1.3,
+//     scrollTrigger: {
+//       trigger: ".casesSec",
+//       scroller: "body",
+//       start: "top 90%",
+//       end: "top 30%",
+//       scrub: 2,
+//     },
+//   });
+// };
 
 const benefitsAnimation = () => {
   gsap.from(".benefitsSec .allh2, .benefitsSec .allh1, .benefitsSec .allp", {
@@ -618,7 +623,7 @@ serviceAnimation();
 
 processAnimation();
 
-casesAnimation();
+// casesAnimation();
 
 benefitsAnimation();
 
