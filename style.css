@@ -769,7 +769,7 @@ footer {
   color: #fff;
 }
 .inputCol input {
-  width: clamp(100%, 100%, 100%);
+  width: 40vw;
   height: 3rem;
   background-color: #343434;
   color: #fff;
@@ -934,6 +934,9 @@ footer {
     align-items: start;
     gap: 15px;
     width: 100%;
+  }
+  .inputCol input{
+    width: 90vw;
   }
   .inputCol label {
     font-size: 25px;
