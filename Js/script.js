@@ -178,7 +178,7 @@ const cursorAnimation = () => {
 const brandsAnimation = () => {
   if (window.innerWidth > 1024) {
     gsap.to(".track", {
-      x: "-60%",
+      x: "-100%",
       duration: 40,
       repeat: -1,
       yoyo: true,
@@ -186,7 +186,7 @@ const brandsAnimation = () => {
     });
   } else if (window.innerWidth < 768) {
     gsap.to(".track", {
-      x: "-80%",
+      x: "-100%",
       duration: 50,
       repeat: -1,
       yoyo: true,
