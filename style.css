@@ -381,7 +381,34 @@ header.add .navRow {
 .benefitsSec {
   display: block;
   padding: 50px 0px;
+  height: fit-content;
 }
+.tworows {
+  gap: 22px;
+}
+.box {
+  width: 32%;
+  gap: 17px;
+  border: 1px solid #ffffff28;
+  border-radius: 8px;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, black, #c300ff1e 40% 50%, #000);
+  align-items: baseline;
+  text-align: left;
+}
+.box i {
+  font-size: 25px;
+}
+.box h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.box p {
+  color: #d1d1d1;
+  line-height: 1.5rem;
+  font-size: 15px;
+}
+
 
 /*------------------
  SECTION - 7 PRICING 
@@ -392,13 +419,13 @@ header.add .navRow {
   padding: 50px 0px;
   height: fit-content;
 }
-.pricingMethod{
+.pricingMethod {
   margin-bottom: 30px;
 }
-.pricingMethod span{
+.pricingMethod span {
   font-weight: 500;
 }
-.togglebtn{
+.togglebtn {
   height: 26px;
   width: 55px;
   background-color: #5960e8;
@@ -407,10 +434,10 @@ header.add .navRow {
   position: relative;
   border: 1px solid #ffffff26;
 }
-.white{
+.white {
   position: absolute;
   top: 1px;
-  right: 2px; 
+  right: 2px;
   height: 22px;
   width: 22px;
   background-color: #ffffff;
@@ -449,17 +476,17 @@ header.add .navRow {
   margin: 10px 0px;
   font-weight: 600;
 }
-.price small{
+.price small {
   font-weight: 300;
   font-size: 14px;
 }
-.remove{
+.remove {
   display: none;
 }
-.left{
+.left {
   left: 2px !important;
 }
-.black{
+.black {
   background-color: #ffffff21;
 }
 .description {
@@ -772,6 +799,17 @@ footer {
     display: none;
   }
 
+  /*------------------
+  SECTION - 6 BENEFITS 
+  ------------------*/
+  .firstrow {
+    flex-direction: column;
+    gap: 19px;
+  }
+  .box{
+    width: 100%;
+  }
+
   /*-----------------
   SECTION - 7 PRICING 
   -----------------*/
@@ -887,6 +925,19 @@ footer {
   .right-layer {
     display: none;
   }
+
+
+  /*------------------
+  SECTION - 6 BENEFITS 
+  ------------------*/
+  .firstrow {
+    flex-direction: column;
+    gap: 19px;
+  }
+  .box{
+    width: 70%;
+  }
+
 
   /*-----------------
   SECTION - 7 PRICING 
