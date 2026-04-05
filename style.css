@@ -407,6 +407,7 @@ header.add .navRow {
   border: 1px solid #ffffff2d;
 }
 .process-video video {
+  pointer-events: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
