@@ -241,6 +241,7 @@ const casesAnimation = () => {
 };
 
 const benefitsAnimation = () => {
+
   gsap.from(".benefitsSec .allh2, .benefitsSec .allh1, .benefitsSec .allp", {
     y: -100,
     opacity: 0,
@@ -253,6 +254,22 @@ const benefitsAnimation = () => {
       scrub: 2,
     },
   });
+
+  gsap.from(".box", {
+    opacity: 0,
+    y: 100,
+    scale: 0.7,
+    ease: "power2.out",
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: ".box",
+      scroller: "body",
+      start: "top 70%",
+      end: "top 50%",
+      scrub: 2,
+    },
+  });
+
 };
 
 const pricingAnimation = () => {
