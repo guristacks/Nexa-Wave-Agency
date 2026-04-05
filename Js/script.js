@@ -271,60 +271,76 @@ const pricingAnimation = () => {
 
   if (window.innerWidth > 1024) {
     gsap.from(".landing, .elite, .custom", {
-    opacity: 0,
-    scale: 0.7,
-    scrollTrigger: {
-      trigger: ".pricingSec",
-      scroller: "body",
-      start: "top 30%",
-      end: "top 10%",
-      scrub: 2,
-    },
-  });
+      opacity: 0,
+      scale: 0.7,
+      scrollTrigger: {
+        trigger: ".pricingSec",
+        scroller: "body",
+        start: "top 30%",
+        end: "top 10%",
+        scrub: 2,
+      },
+    });
   }
 
   if (window.innerWidth < 768) {
     gsap.from(".landing", {
-    opacity: 0,
-    scale: 0.7,
-    scrollTrigger: {
-      trigger: ".landing",
-      scroller: "body",
-      start: "top 70%",
-      end: "top 50%",
-      scrub: 2,
-    },
-  });
+      opacity: 0,
+      scale: 0.7,
+      scrollTrigger: {
+        trigger: ".landing",
+        scroller: "body",
+        start: "top 70%",
+        end: "top 50%",
+        scrub: 2,
+      },
+    });
   }
 
   if (window.innerWidth < 768) {
     gsap.from(".elite", {
-    opacity: 0,
-    scale: 0.7,
-    scrollTrigger: {
-      trigger: ".elite",
-      scroller: "body",
-      start: "top 70%",
-      end: "top 50%",
-      scrub: 2,
-    },
-  });
+      opacity: 0,
+      scale: 0.7,
+      scrollTrigger: {
+        trigger: ".elite",
+        scroller: "body",
+        start: "top 70%",
+        end: "top 50%",
+        scrub: 2,
+      },
+    });
   }
 
   if (window.innerWidth < 768) {
     gsap.from(".custom", {
-    opacity: 0,
-    scale: 0.7,
-    scrollTrigger: {
-      trigger: ".custom",
-      scroller: "body",
-      start: "top 70%",
-      end: "top 50%",
-      scrub: 2,
-    },
-  });
+      opacity: 0,
+      scale: 0.7,
+      scrollTrigger: {
+        trigger: ".custom",
+        scroller: "body",
+        start: "top 70%",
+        end: "top 50%",
+        scrub: 2,
+      },
+    });
   }
 
+  const priceMethod = () => {
+    let toggleBtn = document.querySelector(".togglebtn");
+    let white = document.querySelector(".white");
+    let annually = document.querySelectorAll(".anually");
+    let monthly = document.querySelectorAll(".monthly");
+
+    toggleBtn.addEventListener("click", () => {
+      toggleBtn.classList.toggle("black");
+      white.classList.toggle("left");
+
+      annually.forEach((el) => el.classList.toggle("remove"));
+      monthly.forEach((el) => el.classList.toggle("remove"));
+    });
+  };
+
+  priceMethod();
 };
 
 const testimonialsAnimation = () => {

@@ -392,6 +392,30 @@ header.add .navRow {
   padding: 50px 0px;
   height: fit-content;
 }
+.pricingMethod{
+  margin-bottom: 30px;
+}
+.pricingMethod span{
+  font-weight: 500;
+}
+.togglebtn{
+  height: 26px;
+  width: 55px;
+  background-color: #5960e8;
+  border-radius: 30px;
+  margin: 0px 10px;
+  position: relative;
+  border: 1px solid #ffffff26;
+}
+.white{
+  position: absolute;
+  top: 1px;
+  right: 2px; 
+  height: 22px;
+  width: 22px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
 .range {
   align-items: baseline;
 }
@@ -423,9 +447,23 @@ header.add .navRow {
 .price {
   font-size: 30px;
   margin: 10px 0px;
+  font-weight: 600;
+}
+.price small{
+  font-weight: 300;
+  font-size: 14px;
+}
+.remove{
+  display: none;
+}
+.left{
+  left: 2px !important;
+}
+.black{
+  background-color: #ffffff21;
 }
 .description {
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
   line-height: 1.7rem;
 }
@@ -458,7 +496,7 @@ header.add .navRow {
 .landing h4,
 .elite h4,
 .custom h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.7rem;
 }
