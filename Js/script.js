@@ -327,23 +327,95 @@ const processAnimation = () => {
       scrub: 2,
     },
   });
-
 };
 
-// const casesAnimation = () => {
-//   gsap.from(".casesSec .allh2, .casesSec .allh1, .casesSec .allp", {
-//     y: -100,
-//     opacity: 0,
-//     scale: 1.3,
-//     scrollTrigger: {
-//       trigger: ".casesSec",
-//       scroller: "body",
-//       start: "top 90%",
-//       end: "top 30%",
-//       scrub: 2,
-//     },
-//   });
-// };
+const casesAnimation = () => {
+  gsap.from(".casesSec .allh2, .casesSec .allh1, .casesSec .allp", {
+    y: -100,
+    opacity: 0,
+    scale: 1.3,
+    scrollTrigger: {
+      trigger: ".casesSec",
+      scroller: "body",
+      start: "top 90%",
+      end: "top 30%",
+      scrub: 2,
+    },
+  });
+
+  // if (Window.innerWidth < 767) {
+    gsap.from(".mainCaseRow", {
+    opacity: 0,
+    y:50,
+    scale: 0.7,
+    scrollTrigger: {
+      trigger: ".casesSec",
+      scroller: "body",
+      top: "top 30%",
+      end: "top 10%",
+      scrub: 2,
+    },
+  });
+  // }  
+
+  if (window.innerWidth > 767) {
+    const track = document.querySelector(".caseTrack");
+    const slides = document.querySelectorAll(".mainCaseRow");
+
+    let index = 0;
+    let startX = 0;
+    let currentX = 0;
+    let isDragging = false;
+
+    function updateSlide() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    // TOUCH / DRAG START
+    track.addEventListener("mousedown", (e) => {
+      isDragging = true;
+      startX = e.clientX;
+    });
+
+    track.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+      currentX = e.clientX;
+    });
+
+    track.addEventListener("mouseup", () => {
+      if (!isDragging) return;
+
+      let diff = startX - currentX;
+
+      if (diff > 50 && index < slides.length - 1) {
+        index++;
+      } else if (diff < -50 && index > 0) {
+        index--;
+      }
+
+      updateSlide();
+      isDragging = false;
+    });
+
+    // MOBILE TOUCH
+    track.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    track.addEventListener("touchend", (e) => {
+      let endX = e.changedTouches[0].clientX;
+      let diff = startX - endX;
+
+      if (diff > 50 && index < slides.length - 1) {
+        index++;
+      } else if (diff < -50 && index > 0) {
+        index--;
+      }
+
+      updateSlide();
+    });
+  }
+};
 
 const benefitsAnimation = () => {
   gsap.from(".benefitsSec .allh2, .benefitsSec .allh1, .benefitsSec .allp", {
@@ -623,7 +695,7 @@ serviceAnimation();
 
 processAnimation();
 
-// casesAnimation();
+casesAnimation();
 
 benefitsAnimation();
 
