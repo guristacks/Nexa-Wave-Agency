@@ -268,7 +268,7 @@ header.add .navRow {
   font-weight: 600;
 }
 .hero-content p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: clamp(1.5rem, 1.5rem, 1.5rem);
   color: #ffffffaf;
 }
@@ -439,6 +439,7 @@ header.add .navRow {
   gap: 30px;
 }
 .process {
+  height: 450px;
   padding: 30px;
   align-items: flex-start;
   gap: 15px;
@@ -502,6 +503,7 @@ header.add .navRow {
 }
 .box {
   width: 32%;
+  height: 210px;
   gap: 17px;
   border: 1px solid #ffffff28;
   border-radius: 8px;
@@ -869,6 +871,19 @@ footer {
 }
 .linkscol {
   gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: right;
+}
+.main-links {
+  width: 100%;
+  justify-content: right;
+  gap: 30px;
+}
+.main-links h2 {
+  color: #fff;
+  width: 100%;
+  text-align: right;
 }
 .linkscol i {
   font-size: 25px;
@@ -963,7 +978,7 @@ footer {
     border-bottom: unset;
   }
   .service-tags p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .process {
     padding: 15px;
@@ -984,6 +999,16 @@ footer {
   .process-video {
     height: 250px;
   }
+  .process {
+    height: fit-content;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid #ffffff1f;
+    border-radius: 8px;
+    width: 100%;
+    background: radial-gradient(#ffffff2a, #0000000d);
+  }
 
   /*------------------
   SECTION - 6 BENEFITS 
@@ -994,6 +1019,7 @@ footer {
   }
   .box {
     width: 100%;
+    height: fit-content;
   }
   .box p {
     margin-bottom: 20px;
@@ -1062,25 +1088,21 @@ footer {
     gap: 20px;
     width: 100%;
   }
-  .inputCol {
-    align-items: start;
-    gap: 15px;
+  .main-links {
     width: 100%;
+    justify-content: left;
+    gap: 20px;
   }
-  .inputCol input {
-    width: 90vw;
-  }
-  .inputCol label {
-    font-size: 25px;
-    font-weight: 600;
+  .main-links h2 {
     color: #fff;
-  }
-  .signrow {
-    flex-direction: column;
-    gap: 10px;
+    width: 100%;
+    text-align: left;
   }
   .linkscol {
-    gap: 5px;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
   }
   .footer-main {
     padding: 20px 0px;
