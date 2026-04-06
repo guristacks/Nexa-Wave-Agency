@@ -69,7 +69,7 @@ section {
 .allh2 {
   font-size: clamp(14px, 14px, 16px);
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   padding: 8px 12px;
   border: 1px solid #ffffff46;
   border-radius: 8px;
@@ -80,12 +80,12 @@ section {
   line-height: clamp(2rem, 8vw, 5vw);
   font-weight: 600;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .allp {
   margin-bottom: 50px;
-  font-size: clamp(14px, 16px, 16px);
-  line-height: clamp(1.5rem, 1.5rem, 1.5rem);
+  font-size: clamp(16px, 16px, 16px);
+  line-height: clamp(1.6rem, 1.6rem, 1.6rem);
   color: #ffffffaf;
   text-align: center;
 }
