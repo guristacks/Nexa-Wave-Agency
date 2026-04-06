@@ -268,7 +268,7 @@ header.add .navRow {
   font-weight: 600;
 }
 .hero-content p {
-  font-size :16px;
+  font-size: 16px;
   line-height: clamp(1.5rem, 1.5rem, 1.5rem);
   color: #ffffffaf;
 }
@@ -406,6 +406,7 @@ header.add .navRow {
   font-size: 16px;
   line-height: 1.6rem;
   color: #e0e0e0;
+  margin: 8px 0px;
 }
 .service-tags {
   gap: 10px;
@@ -902,6 +903,23 @@ footer {
     display: none;
   }
 
+  .allp {
+    margin-bottom: 70px;
+    font-size: clamp(16px, 16px, 16px);
+    line-height: clamp(1.6rem, 1.6rem, 1.6rem);
+    color: #ffffffaf;
+    text-align: center;
+  }
+  .allh2 {
+    font-size: clamp(14px, 14px, 16px);
+    font-weight: 500;
+    margin-bottom: 25px;
+    padding: 8px 12px;
+    border: 1px solid #ffffff46;
+    border-radius: 8px;
+    width: fit-content;
+  }
+
   /*----------------
  SECTION - 2 BRANDS 
  -----------------*/
@@ -945,7 +963,7 @@ footer {
     border-bottom: unset;
   }
   .service-tags p {
-    font-size: 11px;
+    font-size: 12px;
   }
   .process {
     padding: 15px;
@@ -960,6 +978,12 @@ footer {
   .bothrow {
     width: 100%;
   }
+  .process p {
+    margin: 15px 0px;
+  }
+  .process-video {
+    height: 250px;
+  }
 
   /*------------------
   SECTION - 6 BENEFITS 
@@ -970,6 +994,9 @@ footer {
   }
   .box {
     width: 100%;
+  }
+  .box p {
+    margin-bottom: 20px;
   }
 
   /*-----------------
@@ -1018,6 +1045,7 @@ footer {
   .ans p {
     font-size: 16px;
     line-height: 1.7rem;
+    margin: 10px 0px;
   }
 
   /*-----
