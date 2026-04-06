@@ -241,48 +241,35 @@ const diffrenceAnimation = () => {
       scrub: 2,
     },
   });
+};
 
-  if (window.innerWidth > 1024) {
-    gsap.from(".landing, .elite", {
-      opacity: 0,
-      scale: 0.7,
-      scrollTrigger: {
-        trigger: ".diffrenceSec",
-        scroller: "body",
-        start: "top 90%",
-        end: "top 70%",
-        scrub: 2,
-      },
-    });
-  }
+const ourTeamAnimation = () => {
+  gsap.from(".ourTeamSec .allh2, .ourTeamSec .allh1, .ourTeamSec .allp", {
+    y: -100,
+    opacity: 0,
+    scale: 1.3,
+    scrollTrigger: {
+      trigger: ".ourTeamSec",
+      scroller: "body",
+      start: "top 90%",
+      end: "top 30%",
+      scrub: 2,
+    },
+  });
 
-  if (window.innerWidth < 768) {
-    gsap.from(".landing", {
-      opacity: 0,
-      scale: 0.7,
-      scrollTrigger: {
-        trigger: ".landing",
-        scroller: "body",
-        start: "top 70%",
-        end: "top 50%",
-        scrub: 2,
-      },
-    });
-  }
-
-  if (window.innerWidth < 768) {
-    gsap.from(".elite", {
-      opacity: 0,
-      scale: 0.7,
-      scrollTrigger: {
-        trigger: ".elite",
-        scroller: "body",
-        start: "top 70%",
-        end: "top 50%",
-        scrub: 2,
-      },
-    });
-  }
+  gsap.from(".ourTeam-box", {
+    opacity: 0,
+    y: 50,
+    scale: 0.7,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".ourTeam-box",
+      scroller: "body",
+      start: "top 90%",
+      end: "top 70%",
+      scrub: 2,
+    },
+  });
 };
 
 const faqsAnimation = () => {
@@ -340,6 +327,8 @@ whyUsAnimation();
 valueAnimation();
 
 diffrenceAnimation();
+
+ourTeamAnimation();
 
 faqsAnimation();
 
