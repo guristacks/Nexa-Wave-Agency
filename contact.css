@@ -154,8 +154,8 @@ header {
   user-select: none;
   border-radius: 8px;
   box-shadow:
-    1px 1px 50px -20px #f680ff,
-    1px 1px 50px -20px GOLDENROD;
+    1px 1px 50px -20px #f780ff88,
+    1px 1px 50px -20px rgba(218, 165, 32, 0.553);
 }
 .IconCol {
   display: none;

@@ -154,8 +154,8 @@ header {
   user-select: none;
   border-radius: 8px;
   box-shadow:
-    1px 1px 50px -20px #f680ff,
-    1px 1px 50px -20px GOLDENROD;
+    1px 1px 50px -20px #f780ff88,
+    1px 1px 50px -20px rgba(218, 165, 32, 0.553);
 }
 .IconCol {
   display: none;
@@ -215,8 +215,8 @@ header.add .navRow {
   font-weight: 400;
 }
 
-/*---------------
- SECTION - 1 HERO 
+/*----------------
+ SECTION - 1 ABOUT 
  ---------------*/
 
 .aboutSec {
@@ -301,11 +301,11 @@ header.add .navRow {
   box-shadow: -15px 0px 20px #000000;
 }
 
-/*------------------
- SECTION - 6 BENEFITS 
- -----------------*/
+/*-------------------
+ SECTION - 3 WHY US ? 
+ ------------------*/
 
-.benefitsSec {
+.whyUsSec {
   display: block;
   padding: 50px 0px;
   height: fit-content;
@@ -337,11 +337,52 @@ header.add .navRow {
   font-size: 15px;
 }
 
-/*------------------
- SECTION - 7 PRICING 
- -----------------*/
+/*----------------
+ SECTION - 4 VALUE 
+ ---------------*/
 
-.pricingSec {
+.valueSec {
+  display: block;
+  padding: 50px 0px;
+  height: fit-content;
+}
+.value-firstrow, .value-secondrow {
+  gap: 30px;
+  margin: auto;
+  width: 80%;
+}
+.value-firstrow{
+  margin-bottom: 30px;
+}
+.value-box {
+  width: 100%;
+  gap: 17px;
+  border: 1px solid #ffffff28;
+  border-radius: 8px;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, black, #ffffff11 40% 50%, #000);
+  align-items: baseline;
+  text-align: left;
+}
+.value-box i {
+  font-size: 25px;
+  margin-right: 5px;
+}
+.value-box h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.value-box p {
+  color: #d1d1d1;
+  line-height: 1.5rem;
+  font-size: 15px;
+}
+
+/*--------------------
+ SECTION - 5 DIFFRENCE 
+ -------------------*/
+
+.diffrenceSec {
   display: block;
   padding: 50px 0px;
   height: fit-content;
@@ -387,76 +428,8 @@ header.add .navRow {
   margin-right: 5px;
 }
 
-/*-----------------------
- SECTION - 8 TESTIMONIALS 
- ----------------------*/
-
-.testimonialSec {
-  display: block;
-  padding: 50px 0px;
-  height: fit-content;
-}
-.outter-wraper,
-.outter-wraper2 {
-  width: 100%;
-  padding: 10px 0px;
-  overflow-x: hidden;
-  gap: 40px;
-  white-space: nowrap;
-}
-.outter-wraper2 {
-  justify-content: flex-end;
-}
-.Reviewrow,
-.Reviewrow2 {
-  gap: 15px;
-  padding: 20px 15px;
-  width: 500px;
-  height: 225px;
-  align-items: baseline;
-  border: 1px solid #ffffff40;
-  border-radius: 8px;
-  flex-shrink: 0;
-  white-space: normal;
-  background: linear-gradient(135deg, #00ffff19, #000000, #ee00ff16);
-}
-.stars {
-  gap: 5px;
-}
-.stars i {
-  color: goldenrod;
-}
-.msg p {
-  font-size: 15px;
-  line-height: 1.5rem;
-  color: #ffffffce;
-}
-.Personrow {
-  gap: 15px;
-}
-.person img {
-  height: 50px;
-  width: 50px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid #ffffff4a;
-  object-position: top;
-}
-.Personcol {
-  gap: 5px;
-  align-items: baseline;
-}
-.Personrow h3 {
-  font-weight: 500;
-  font-size: 18px;
-}
-.Personrow p {
-  font-weight: 500;
-  font-size: 12px;
-}
-
 /*---------------
- SECTION - 9 FAQs 
+ SECTION - 6 FAQs 
  --------------*/
 
 .faqSec {
@@ -505,9 +478,9 @@ details[open] i {
   transform: rotate(180deg);
 }
 
-/*------------------
- SECTION - 10 PROMO 
- -----------------*/
+/*--------------------
+ SECTION - 7 PROMOTION 
+ -------------------*/
 
 .promoSec {
   height: fit-content;
@@ -647,59 +620,11 @@ footer {
   }
 
   /*------------------
-  SECTION - 3 SERVICE 
+  SECTION - 3 WHY US ? 
   ------------------*/
-  .Servicerow {
-    flex-direction: column;
-    border: 1px solid #ffffff5c;
-    border-radius: 8px;
-    gap: 15px;
-  }
-  .Servicerow:nth-child(2) {
-    flex-direction: column;
-    border: 1px solid #ffffff5c;
-    border-radius: 8px;
-    flex-direction: column;
-  }
-  .Servicerow:nth-child(4) {
-    flex-direction: column;
-    border: 1px solid #ffffff5c;
-    border-radius: 8px;
-    flex-direction: column;
-  }
-  .service-cont {
-    padding: 0px 15px 15px 15px;
-    background: linear-gradient(155deg, black, #ffffff1a, black);
-  }
-  .service-video {
-    height: 250px;
-    padding: 0px;
-  }
-  .service-video video {
-    border-radius: 8px 8px 0px 0px;
-    border-bottom: unset;
-  }
-  .service-tags p {
-    font-size: 11px;
-  }
-  .process {
-    padding: 15px;
-  }
 
-  /*------------------
-  SECTION - 4 PROCESS 
-  ------------------*/
-  .Processcol {
-    flex-direction: column;
-  }
-  .bothrow {
-    width: 100%;
-  }
-
-  /*------------------
-  SECTION - 6 BENEFITS 
-  ------------------*/
   .firstrow {
+    width: 90%;
     flex-direction: column;
     gap: 30px;
   }
@@ -707,12 +632,27 @@ footer {
     width: 100%;
   }
 
-  /*-----------------
-  SECTION - 7 PRICING 
-  -----------------*/
+  /*---------------
+  SECTION - 4 VALUE
+  ---------------*/
+
+  .value-firstrow, .value-secondrow {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .value-box {
+    width: 100%;
+  }
+
+  /*-------------------
+  SECTION - 5 DIFFRENCE 
+  -------------------*/
+
   .range {
     flex-direction: column;
     gap: 30px;
+    width: 100%;
   }
   .landing,
   .elite,
@@ -730,20 +670,8 @@ footer {
     font-size: 16px;
   }
 
-  /*----------------------
-  SECTION - 8 TESTIMONIALS 
-  ----------------------*/
-
-  .Reviewrow,
-  .Reviewrow2 {
-    width: 89vw;
-    flex-shrink: 0;
-    white-space: normal;
-    height: 255px;
-  }
-
   /*---------------
-  SECTION - 9 FAQs 
+  SECTION - 6 FAQs 
   --------------*/
 
   .all-ques {
@@ -827,58 +755,9 @@ footer {
   }
 
   /*------------------
-  SECTION - 4 PROCESS 
-  ------------------*/
-  .Servicerow {
-    flex-direction: column;
-    border: 1px solid #ffffff5c;
-    border-radius: 8px;
-    gap: 30px;
-  }
-  .Servicerow:nth-child(2) {
-    flex-direction: column;
-    border: 1px solid #ffffff5c;
-    border-radius: 8px;
-    flex-direction: column;
-  }
-  .Servicerow:nth-child(4) {
-    flex-direction: column;
-    border: 1px solid #ffffff5c;
-    border-radius: 8px;
-    flex-direction: column;
-  }
-  .service-cont {
-    padding: 0px 35px 35px 35px;
-    background: linear-gradient(155deg, black, #ffffff1a, black);
-  }
-  .service-video {
-    height: 300px;
-    padding: 0px;
-  }
-  .service-video video {
-    border-radius: 8px 8px 0px 0px;
-    border-bottom: unset;
-  }
-  .service-tags p {
-    font-size: 11px;
-  }
-  .process {
-    padding: 15px;
-  }
-
-  /*------------------
-  SECTION - 4 PROCESS 
+  SECTION - 3 WHY US ? 
   ------------------*/
 
-  .bothrow {
-    gap: 30px;
-    width: 100%;
-    margin: auto;
-  }
-
-  /*------------------
-  SECTION - 6 BENEFITS 
-  ------------------*/
   .firstrow {
     flex-direction: column;
     gap: 19px;
@@ -887,9 +766,22 @@ footer {
     width: 70%;
   }
 
-  /*-----------------
-  SECTION - 7 PRICING 
-  -----------------*/
+  /*---------------
+  SECTION - 4 VALUE
+  ---------------*/
+
+  .value-firstrow, .value-secondrow {
+    flex-direction: column;
+    gap: 19px;
+  }
+  .value-box {
+    width: 70%;
+  }
+
+  /*-------------------
+  SECTION - 5 DIFFRENCE 
+  -------------------*/
+
   .range {
     flex-direction: column;
     gap: 30px;
@@ -902,8 +794,9 @@ footer {
   }
 
   /*---------------
-  SECTION - 9 FAQs 
+  SECTION - 6 FAQs 
   --------------*/
+
   .all-ques {
     width: 70vw;
   }
