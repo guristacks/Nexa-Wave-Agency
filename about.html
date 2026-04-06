@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- TITLE -->
     <title>Nexa Wave Agency - Web Design, Development & Branding Experts</title>
@@ -11,11 +12,14 @@
     <!-- META DESCRIPTION TAG -->
     <meta name="description"
         content="Nexa Wave Agency delivers modern web design, development, and branding solutions to help businesses grow online with powerful and user-focused digital experiences.">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/webp" href="Images/Nexa-wave-favico.webp">
 
     <!-- CONNECT CSS FILE -->
+    <link rel="preload" href="about.css" as="style">
     <link rel="stylesheet" href="about.css">
 
     <!-- FONT - MONTSERRAT -->
@@ -25,6 +29,9 @@
 
     <!-- CDN - REMIX ICON -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
     <!-- WEBSITE DOMAIN -->
     <link rel="canonical" href="https://nexa-wave-agency.vercel.app/">
@@ -33,24 +40,46 @@
     <meta property="og:title" content="Nexa Wave Agency">
     <meta property="og:description" content="Web Design, Development & Branding Experts">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexa-wave-agency.vercel.app/about.html">
+    <meta property="og:site_name" content="Nexa Wave Agency">
+    <meta property="og:image" content="https://nexa-wave-agency.vercel.app/Images/Nexa-wave-favico.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nexa Wave Agency - Web Design, Development & Branding Experts">
+    <meta name="twitter:description" content="Nexa Wave Agency delivers modern web design, development, and branding solutions to help businesses grow online with powerful and user-focused digital experiences.">
+    <meta name="twitter:image" content="https://nexa-wave-agency.vercel.app/Images/Nexa-wave-favico.webp">
 
     <meta name="theme-color" content="#000000">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "About - Nexa Wave Agency",
+            "url": "https://nexa-wave-agency.vercel.app/about.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Nexa Wave Agency",
+                "url": "https://nexa-wave-agency.vercel.app/"
+            }
+        }
+    </script>
 </head>
 
 <body>
 
-    <header class="flex ac">
+    <header class="flex ac" role="banner">
         <div class="container">
             <div class="row flex sb ac">
                 <div class="IconCol">
-                    <i class="ri-menu-4-line"></i>
-                    <i class="ri-close-large-fill"></i>
+                    <i class="ri-menu-4-line" role="button" tabindex="0" aria-label="Open menu"></i>
+                    <i class="ri-close-large-fill" role="button" tabindex="0" aria-label="Close menu"></i>
                 </div>
                 <div class="col flex ac">
                     <a class="logo" href="index.html">Nexa Wave</a>
                 </div>
                 <div class="col">
-                    <ul class="nav flex ac">
+                    <ul class="nav flex ac" role="navigation" aria-label="Primary">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -67,7 +96,7 @@
         </div>
     </header>
 
-    <main>
+    <main role="main">
         <!-- SECTION - 1 ABOUT -->
         <section id="about" class="aboutSec">
             <div class="container">
@@ -88,41 +117,41 @@
                 <div class="outter flex ac">
                     <div class="track flex ac">
                         <div class="inner flex ac">
-                            <i class="ri-code-s-slash-fill"></i>
+                            <i class="ri-code-s-slash-fill" aria-hidden="true"></i>
                             <h3><b>Velora Systems</b></h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-issues-line"></i>
+                            <i class="ri-issues-line" aria-hidden="true"></i>
                             <h3>Quantix Labs</h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-git-repository-fill"></i>
+                            <i class="ri-git-repository-fill" aria-hidden="true"></i>
                             <h3><b>AetherWorks</b></h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-git-repository-private-line"></i>
+                            <i class="ri-git-repository-private-line" aria-hidden="true"></i>
                             <h3>Nexora Tech</h3>
                         </div>
                         <div class="inner flex ac">
-                            <i class="ri-puzzle-2-fill"></i>
+                            <i class="ri-puzzle-2-fill" aria-hidden="true"></i>
                             <h3><b>Lumicore Solutions</b></h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-command-line"></i>
+                            <i class="ri-command-line" aria-hidden="true"></i>
                             <h3>Zentrova AI</h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-bug-2-fill"></i>
+                            <i class="ri-bug-2-fill" aria-hidden="true"></i>
                             <h3><b>Orbyte Digital</b></h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-remix-fill"></i>
+                            <i class="ri-remix-fill" aria-hidden="true"></i>
                             <h3>Synexis Group</h3>
                         </div>
                     </div>
@@ -146,18 +175,18 @@
 
                 <div class="firstrow flex ac sb">
                     <div class="box col flex f-clmn">
-                        <i class="ri-bar-chart-fill"></i>
+                        <i class="ri-bar-chart-fill" aria-hidden="true"></i>
                         <h3>150+ Businesses</h3>
                         <p>Companies have streamlined their workflows with Nexa Wave’s AI solutions.</p>
                     </div>
 
                     <div class="box col flex f-clmn">
-                        <i class="ri-time-fill"></i>
+                        <i class="ri-time-fill" aria-hidden="true"></i>
                         <h3>1M+ Hours</h3>
                         <p>Reducing manual work and boosting productivity through automation.</p>
                     </div>
                     <div class="box col flex f-clmn">
-                        <i class="ri-flashlight-fill"></i>
+                        <i class="ri-flashlight-fill" aria-hidden="true"></i>
                         <h3>95% Faster</h3>
                         <p>Clients see improved efficiency within the first three months of usage.</p>
                     </div>
@@ -179,25 +208,25 @@
 
                 <div class="value-firstrow flex ac sb">
                     <div class="value-box col flex f-clmn">
-                        <h3><i class="ri-lightbulb-fill"></i> Driving Innovation Forward</h3>
+                        <h3><i class="ri-lightbulb-fill" aria-hidden="true"></i> Driving Innovation Forward</h3>
                         <p>We embrace cutting-edge AI to create smarter, more efficient automation solutions.</p>
                     </div>
 
                     <div class="value-box col flex f-clmn">
-                        <h3><i class="ri-service-line"></i> Committed to Integrity & Trust</h3>
+                        <h3><i class="ri-service-line" aria-hidden="true"></i> Committed to Integrity & Trust</h3>
                         <p>Trust and transparency are at the core of everything we do for our clients.</p>
                     </div>
                 </div>
 
                 <div class="value-secondrow flex ac sb">
                     <div class="value-box col flex f-clmn">
-                        <h3><i class="ri-space-ship-2-line"></i> Empowering Business Growth</h3>
+                        <h3><i class="ri-space-ship-2-line" aria-hidden="true"></i> Empowering Business Growth</h3>
                         <p>We help businesses scale faster, reducing manual tasks and
                             unlocking new opportunities.</p>
                     </div>
 
                     <div class="value-box col flex f-clmn">
-                        <h3><i class="ri-group-fill"></i> Putting Customers First</h3>
+                        <h3><i class="ri-group-fill" aria-hidden="true"></i> Putting Customers First</h3>
                         <p>Your success is our priority—we build solutions that truly make an impact.</p>
                     </div>
                 </div>
@@ -220,21 +249,21 @@
                     <div class="landing flex f-clmn">
                         <p class="heading"> Manual Work</p>
                         <br>
-                        <h4><i class="ri-close-line"></i> Basic workflow automation</h4>
-                        <h4><i class="ri-close-line"></i> AI-powered personal assistant </h4>
-                        <h4><i class="ri-close-line"></i> Standard analytics & reporting</h4>
-                        <h4><i class="ri-close-line"></i> Email & chat support</h4>
-                        <h4><i class="ri-close-line"></i> Up to 3 AI integrations</h4>
+                        <h4><i class="ri-close-line" aria-hidden="true"></i> Basic workflow automation</h4>
+                        <h4><i class="ri-close-line" aria-hidden="true"></i> AI-powered personal assistant </h4>
+                        <h4><i class="ri-close-line" aria-hidden="true"></i> Standard analytics & reporting</h4>
+                        <h4><i class="ri-close-line" aria-hidden="true"></i> Email & chat support</h4>
+                        <h4><i class="ri-close-line" aria-hidden="true"></i> Up to 3 AI integrations</h4>
                     </div>
 
                     <div class="elite flex f-clmn">
                         <p class="heading"> Nexa Wave AI Automation</p>
                         <br>
-                        <h4><i class="ri-check-fill"></i> Advanced workflow automation</h4>
-                        <h4><i class="ri-check-fill"></i> AI-driven sales & marketing tools</h4>
-                        <h4><i class="ri-check-fill"></i> Enhanced data analytics & insights</h4>
-                        <h4><i class="ri-check-fill"></i> Priority customer support</h4>
-                        <h4><i class="ri-check-fill"></i> Up to 10 AI integrations</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Advanced workflow automation</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> AI-driven sales & marketing tools</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Enhanced data analytics & insights</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Priority customer support</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Up to 10 AI integrations</h4>
                     </div>
 
                 </div>
@@ -253,18 +282,18 @@
 
                 <div class="ourTeam-firstrow flex ac sb">
                     <div class="ourTeam-box col flex f-clmn">
-                        <img src="Images/Testimonial-Sec/test-1.webp" alt="">
+                        <img src="Images/Testimonial-Sec/test-1.webp" alt="Alex Carter" loading="lazy" decoding="async">
                         <h3>Alex Carter</h3>
                         <p>Co-Founder & AI Strategist</p>
                     </div>
 
                     <div class="ourTeam-box col flex f-clmn">
-                        <img src="Images/Testimonial-Sec/test-2.webp" alt="">
+                        <img src="Images/Testimonial-Sec/test-2.webp" alt="Sophia Nguyen" loading="lazy" decoding="async">
                         <h3>Sophia Nguyen</h3>
                         <p>Head of Automation Engineering</p>
                     </div>
                     <div class="ourTeam-box col flex f-clmn">
-                        <img src="Images/Testimonial-Sec/test-3.webp" alt="">
+                        <img src="Images/Testimonial-Sec/test-3.webp" alt="Ryan Mitchell" loading="lazy" decoding="async">
                         <h3>Ryan Mitchell</h3>
                         <p>Lead Data Scientist</p>
                     </div>
@@ -287,7 +316,7 @@
                         <summary>
                             <div class="que flex ac sb">
                                 <h3>How can AI automation help my business?</h3>
-                                <i class="ri-arrow-drop-down-line"></i>
+                                <i class="ri-arrow-drop-down-line" aria-hidden="true"></i>
                             </div>
                         </summary>
                         <div class="ans">
@@ -304,7 +333,7 @@
                         <summary>
                             <div class="que flex ac sb">
                                 <h3>Is AI automation difficult to integrate?</h3>
-                                <i class="ri-arrow-drop-down-line"></i>
+                                <i class="ri-arrow-drop-down-line" aria-hidden="true"></i>
                             </div>
                         </summary>
                         <div class="ans">
@@ -320,7 +349,7 @@
                         <summary>
                             <div class="que flex ac sb">
                                 <h3>What industries can benefit from AI automation?</h3>
-                                <i class="ri-arrow-drop-down-line"></i>
+                                <i class="ri-arrow-drop-down-line" aria-hidden="true"></i>
                             </div>
                         </summary>
                         <div class="ans">
@@ -337,7 +366,7 @@
                         <summary>
                             <div class="que flex ac sb">
                                 <h3>Do I need technical knowledge to use AI automation?</h3>
-                                <i class="ri-arrow-drop-down-line"></i>
+                                <i class="ri-arrow-drop-down-line" aria-hidden="true"></i>
                             </div>
                         </summary>
                         <div class="ans">
@@ -354,7 +383,7 @@
                         <summary>
                             <div class="que flex ac sb">
                                 <h3>What kind of support do you offer?</h3>
-                                <i class="ri-arrow-drop-down-line"></i>
+                                <i class="ri-arrow-drop-down-line" aria-hidden="true"></i>
                             </div>
                         </summary>
                         <div class="ans">
@@ -375,9 +404,9 @@
                 <div class="promotion">
                     <h1 class="allh1">Let AI do the Work so <br>you can Scale Faster</h1>
                     <p>Book a Call Today and Start Automating</p>
-                    <button class="blueBtn">
-                        <span class="text">Book a free call <i class="ri-arrow-right-up-long-line"></i></span>
-                        <span class="hover-text">Book a free call <i class="ri-arrow-right-long-line"></i></span>
+                    <button class="blueBtn" type="button" aria-label="Book a free call">
+                        <span class="text">Book a free call <i class="ri-arrow-right-up-long-line" aria-hidden="true"></i></span>
+                        <span class="hover-text">Book a free call <i class="ri-arrow-right-long-line" aria-hidden="true"></i></span>
                     </button>
                 </div>
         </section>
@@ -389,7 +418,7 @@
             <div class="footer-main flex sb">
                 <div class="imgcol flex f-clmn">
                     <div class="flex ac">
-                        <img src="Images/Nexa-wave-favico.webp" alt="Logo">
+                        <img src="Images/Nexa-wave-favico.webp" alt="Nexa Wave logo" loading="lazy" decoding="async">
                         <a class="logo" href="index.html">Nexa Wave</a>
                     </div>
                     <p>Nexa Wave – Automate Smarter, Optimize <br> Faster, and Grow Stronger.</p>
@@ -398,9 +427,9 @@
                     <h2>Social Media</h2>
                     
                     <div class="linkscol flex ac jc">
-                        <a href=""><i class="ri-instagram-line"></i></a>
-                        <a href=""><i class="ri-facebook-fill"></i></a>
-                        <a href=""><i class="ri-whatsapp-line"></i></a>
+                        <a href="" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+                        <a href="" aria-label="Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                        <a href="" aria-label="WhatsApp"><i class="ri-whatsapp-line" aria-hidden="true"></i></a>
                     </div>
                 </div>
 

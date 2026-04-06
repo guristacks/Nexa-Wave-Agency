@@ -2,6 +2,25 @@
 let tl = gsap.timeline();
 gsap.registerPlugin(ScrollTrigger);
 
+const onPress = (el, handler) => {
+  if (!el) return;
+  el.addEventListener("click", handler);
+  el.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      handler(e);
+    }
+  });
+};
+
+const debounce = (fn, wait = 150) => {
+  let t;
+  return (...args) => {
+    clearTimeout(t);
+    t = setTimeout(() => fn(...args), wait);
+  };
+};
+
 const lenisAnimation = () => {
   let lenis;
   let rafFn;
@@ -31,13 +50,17 @@ const lenisAnimation = () => {
 
   initLenis();
 
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 1024) {
-      initLenis();
-    } else {
-      destroyLenis();
-    }
-  });
+  window.addEventListener(
+    "resize",
+    debounce(() => {
+      if (window.innerWidth > 1024) {
+        initLenis();
+      } else {
+        destroyLenis();
+      }
+    }, 200),
+    { passive: true },
+  );
 };
 
 const loadingAnimation = () => {
@@ -109,7 +132,7 @@ const navBarAnimation = () => {
   let navLinks = document.querySelectorAll(".navCol a");
 
   // OPEN MENU
-  menuBtn.addEventListener("click", (e) => {
+  const openMenu = (e) => {
     e.stopPropagation(); // important
     header.classList.add("add");
     menuBtn.style.display = "none";
@@ -123,7 +146,8 @@ const navBarAnimation = () => {
       duration: 0.3,
       stagger: 0.1,
     });
-  });
+  };
+  onPress(menuBtn, openMenu);
 
   // CLOSE MENU (icon)
   const closeMenu = () => {
@@ -132,10 +156,11 @@ const navBarAnimation = () => {
     closeBtn.style.display = "none";
   };
 
-  closeBtn.addEventListener("click", (e) => {
+  const closeMenuFromEvent = (e) => {
     e.stopPropagation();
     closeMenu();
-  });
+  };
+  onPress(closeBtn, closeMenuFromEvent);
 
   // ✅ 1. Outside click
   document.addEventListener("click", (e) => {
@@ -159,18 +184,36 @@ const navBarAnimation = () => {
 const cursorAnimation = () => {
   let sec = document.querySelector(".heroSec");
   let cursor = document.querySelector(".cursor");
+  if (!sec || !cursor) return;
+
+  let rafId = 0;
+  let lastX = 0;
+  let lastY = 0;
+
+  const schedule = () => {
+    if (rafId) return;
+    rafId = requestAnimationFrame(() => {
+      rafId = 0;
+      gsap.to(cursor, {
+        x: lastX,
+        y: lastY,
+        opacity: 1,
+        overwrite: true,
+        duration: 0.12,
+      });
+    });
+  };
 
   sec.addEventListener("mousemove", (dets) => {
-    gsap.to(cursor, {
-      x: dets.x,
-      y: dets.y,
-      opacity: 1,
-    });
+    lastX = dets.x;
+    lastY = dets.y;
+    schedule();
   });
 
   sec.addEventListener("mouseleave", (dets) => {
     gsap.to(cursor, {
       opacity: 0,
+      overwrite: true,
     });
   });
 };
@@ -431,7 +474,7 @@ const casesAnimation = () => {
     // TOUCH SUPPORT (optional desktop touchscreens)
     track.addEventListener("touchstart", (e) => {
       startX = e.touches[0].clientX;
-    });
+    }, { passive: true });
 
     track.addEventListener("touchend", (e) => {
       let endX = e.changedTouches[0].clientX;
@@ -444,7 +487,7 @@ const casesAnimation = () => {
       if (index < 0) index = slides.length - 1;
 
       updateSlide();
-    });
+    }, { passive: true });
   }
 };
 
@@ -556,13 +599,21 @@ const pricingAnimation = () => {
     let annually = document.querySelectorAll(".anually");
     let monthly = document.querySelectorAll(".monthly");
 
-    toggleBtn.addEventListener("click", () => {
+    const toggle = () => {
       toggleBtn.classList.toggle("black");
       white.classList.toggle("left");
 
       annually.forEach((el) => el.classList.toggle("remove"));
       monthly.forEach((el) => el.classList.toggle("remove"));
-    });
+      if (toggleBtn && toggleBtn.getAttribute("role") === "switch") {
+        toggleBtn.setAttribute(
+          "aria-checked",
+          toggleBtn.classList.contains("black") ? "true" : "false",
+        );
+      }
+    };
+
+    onPress(toggleBtn, toggle);
   };
 
   priceMethod();

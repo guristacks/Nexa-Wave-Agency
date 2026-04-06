@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- TITLE -->
     <title>Nexa Wave Agency - Web Design, Development & Branding Experts</title>
@@ -11,11 +12,14 @@
     <!-- META DESCRIPTION TAG -->
     <meta name="description"
         content="Nexa Wave Agency delivers modern web design, development, and branding solutions to help businesses grow online with powerful and user-focused digital experiences.">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/webp" href="Images/Nexa-wave-favico.webp">
 
     <!-- CONNECT CSS FILE -->
+    <link rel="preload" href="contact.css" as="style">
     <link rel="stylesheet" href="contact.css">
 
     <!-- FONT - MONTSERRAT -->
@@ -25,6 +29,9 @@
 
     <!-- CDN - REMIX ICON -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
     <!-- WEBSITE DOMAIN -->
     <link rel="canonical" href="https://nexa-wave-agency.vercel.app/">
@@ -33,24 +40,46 @@
     <meta property="og:title" content="Nexa Wave Agency">
     <meta property="og:description" content="Web Design, Development & Branding Experts">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexa-wave-agency.vercel.app/contact.html">
+    <meta property="og:site_name" content="Nexa Wave Agency">
+    <meta property="og:image" content="https://nexa-wave-agency.vercel.app/Images/Nexa-wave-favico.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nexa Wave Agency - Web Design, Development & Branding Experts">
+    <meta name="twitter:description" content="Nexa Wave Agency delivers modern web design, development, and branding solutions to help businesses grow online with powerful and user-focused digital experiences.">
+    <meta name="twitter:image" content="https://nexa-wave-agency.vercel.app/Images/Nexa-wave-favico.webp">
 
     <meta name="theme-color" content="#000000">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact - Nexa Wave Agency",
+            "url": "https://nexa-wave-agency.vercel.app/contact.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Nexa Wave Agency",
+                "url": "https://nexa-wave-agency.vercel.app/"
+            }
+        }
+    </script>
 </head>
 
 <body>
 
-    <header class="flex ac">
+    <header class="flex ac" role="banner">
         <div class="container">
             <div class="row flex sb ac">
                 <div class="IconCol">
-                    <i class="ri-menu-4-line"></i>
-                    <i class="ri-close-large-fill"></i>
+                    <i class="ri-menu-4-line" role="button" tabindex="0" aria-label="Open menu"></i>
+                    <i class="ri-close-large-fill" role="button" tabindex="0" aria-label="Close menu"></i>
                 </div>
                 <div class="col flex ac">
                     <a class="logo" href="index.html">Nexa Wave</a>
                 </div>
                 <div class="col">
-                    <ul class="nav flex ac">
+                    <ul class="nav flex ac" role="navigation" aria-label="Primary">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -67,7 +96,7 @@
         </div>
     </header>
 
-    <main>
+    <main role="main">
         <!-- SECTION - 1 CONTACT -->
         <section id="contact" class="contactSec">
             <div class="container">
@@ -78,37 +107,37 @@
                         we’ll be
                         in touch!</p>
                 </div>
-                <form id="contactForm">
+                <form id="contactForm" autocomplete="on" novalidate>
                     <div class="form-content flex f-clmn">
                         <div class="Namerow flex ac sb">
 
                             <div class="col flex f-clmn">
-                                <label>First Name</label>
-                                <input name="firstName" placeholder="Jane" type="text">
+                                <label for="firstName">First Name</label>
+                                <input id="firstName" name="firstName" placeholder="Jane" type="text" autocomplete="given-name" required aria-required="true">
                             </div>
 
                             <div class="col flex f-clmn">
-                                <label>Last Name</label>
-                                <input name="lastName" placeholder="Smith" type="text">
+                                <label for="lastName">Last Name</label>
+                                <input id="lastName" name="lastName" placeholder="Smith" type="text" autocomplete="family-name" required aria-required="true">
                             </div>
                         </div>
 
                         <div class="Mailrow flex ac sb">
                             <div class="col flex f-clmn">
-                                <label>Email</label>
-                                <input name="email" placeholder="jane@gmail.com" type="email">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" placeholder="jane@gmail.com" type="email" autocomplete="email" inputmode="email" required aria-required="true">
                             </div>
 
                             <div class="col flex f-clmn">
-                                <label>Phone</label>
-                                <input name="phone" placeholder="+1(969) 819-8061" type="tel">
+                                <label for="phone">Phone</label>
+                                <input id="phone" name="phone" placeholder="+1(969) 819-8061" type="tel" autocomplete="tel" inputmode="tel" required aria-required="true">
                             </div>
                         </div>
 
                         <div class="Msgrow flex f-clmn">
-                            <label>Message</label>
-                            <textarea name="message" placeholder="Hi, I am jane i want help with...."></textarea>
-                            <input id="submit" type="submit" value="Submit">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Hi, I am jane i want help with...." autocomplete="off" required aria-required="true"></textarea>
+                            <input id="submit" type="submit" value="Submit" aria-label="Submit contact form">
                         </div>
 
                     </div>
@@ -123,7 +152,7 @@
             <div class="footer-main flex sb">
                 <div class="imgcol flex f-clmn">
                     <div class="flex ac">
-                        <img src="Images/Nexa-wave-favico.webp" alt="Logo">
+                        <img src="Images/Nexa-wave-favico.webp" alt="Nexa Wave logo" loading="lazy" decoding="async">
                         <a class="logo" href="index.html">Nexa Wave</a>
                     </div>
                     <p>Nexa Wave – Automate Smarter, Optimize <br> Faster, and Grow Stronger.</p>
@@ -132,9 +161,9 @@
                     <h2>Social Media</h2>
 
                     <div class="linkscol flex ac jc">
-                        <a href=""><i class="ri-instagram-line"></i></a>
-                        <a href=""><i class="ri-facebook-fill"></i></a>
-                        <a href=""><i class="ri-whatsapp-line"></i></a>
+                        <a href="" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+                        <a href="" aria-label="Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                        <a href="" aria-label="WhatsApp"><i class="ri-whatsapp-line" aria-hidden="true"></i></a>
                     </div>
                 </div>
 

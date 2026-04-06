@@ -2,6 +2,25 @@
 let tl = gsap.timeline();
 gsap.registerPlugin(ScrollTrigger);
 
+const onPress = (el, handler) => {
+  if (!el) return;
+  el.addEventListener("click", handler);
+  el.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      handler(e);
+    }
+  });
+};
+
+const debounce = (fn, wait = 150) => {
+  let t;
+  return (...args) => {
+    clearTimeout(t);
+    t = setTimeout(() => fn(...args), wait);
+  };
+};
+
 const lenisAnimation = () => {
   let lenis;
   let rafFn;
@@ -31,13 +50,17 @@ const lenisAnimation = () => {
 
   initLenis();
 
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 1024) {
-      initLenis();
-    } else {
-      destroyLenis();
-    }
-  });
+  window.addEventListener(
+    "resize",
+    debounce(() => {
+      if (window.innerWidth > 1024) {
+        initLenis();
+      } else {
+        destroyLenis();
+      }
+    }, 200),
+    { passive: true },
+  );
 };
 
 const loadingAnimation = () => {
@@ -103,7 +126,7 @@ const navBarAnimation = () => {
   let navLinks = document.querySelectorAll(".navCol a");
 
   // OPEN MENU
-  menuBtn.addEventListener("click", (e) => {
+  const openMenu = (e) => {
     e.stopPropagation(); // important
     header.classList.add("add");
     menuBtn.style.display = "none";
@@ -117,7 +140,8 @@ const navBarAnimation = () => {
       duration: 0.3,
       stagger: 0.1,
     });
-  });
+  };
+  onPress(menuBtn, openMenu);
 
   // CLOSE MENU (icon)
   const closeMenu = () => {
@@ -126,10 +150,11 @@ const navBarAnimation = () => {
     closeBtn.style.display = "none";
   };
 
-  closeBtn.addEventListener("click", (e) => {
+  const closeMenuFromEvent = (e) => {
     e.stopPropagation();
     closeMenu();
-  });
+  };
+  onPress(closeBtn, closeMenuFromEvent);
 
   // ✅ 1. Outside click
   document.addEventListener("click", (e) => {
