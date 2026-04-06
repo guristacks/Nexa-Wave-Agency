@@ -544,6 +544,7 @@ details[open] i {
   margin-top: 30px;
 }
 
+
 /*-----
  FOOTER
  -----*/
@@ -617,6 +618,19 @@ footer {
 }
 .linkscol {
   gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: right;
+}
+.main-links {
+  width: 100%;
+  justify-content: right;
+  gap: 30px;
+}
+.main-links h2 {
+  color: #fff;
+  width: 100%;
+  text-align: right;
 }
 .linkscol i {
   font-size: 25px;
@@ -650,6 +664,24 @@ footer {
   .cursor {
     display: none;
   }
+  
+  .allp {
+    margin-bottom: 70px;
+    font-size: clamp(16px, 16px, 16px);
+    line-height: clamp(1.6rem, 1.6rem, 1.6rem);
+    color: #ffffffaf;
+    text-align: center;
+  }
+  .allh2 {
+    font-size: clamp(14px, 14px, 16px);
+    font-weight: 500;
+    margin-bottom: 25px;
+    padding: 8px 12px;
+    border: 1px solid #ffffff46;
+    border-radius: 8px;
+    width: fit-content;
+  }
+
 
   /*----------------
  SECTION - 2 BRANDS 
@@ -752,30 +784,27 @@ footer {
     gap: 20px;
     width: 100%;
   }
-  .inputCol {
-    align-items: start;
-    gap: 15px;
+  .main-links {
     width: 100%;
+    justify-content: left;
+    gap: 20px;
   }
-  .inputCol input {
-    width: 90vw;
-  }
-  .inputCol label {
-    font-size: 25px;
-    font-weight: 600;
+  .main-links h2 {
     color: #fff;
-  }
-  .signrow {
-    flex-direction: column;
-    gap: 10px;
+    width: 100%;
+    text-align: left;
   }
   .linkscol {
-    gap: 5px;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
   }
   .footer-main {
     padding: 20px 0px;
   }
 }
+
 
 @media (min-width: 767px) and (max-width: 1024px) {
   /*------
