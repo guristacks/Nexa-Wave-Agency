@@ -330,6 +330,8 @@ const processAnimation = () => {
 };
 
 const casesAnimation = () => {
+
+  // HEADING ANIMATION
   gsap.from(".casesSec .allh2, .casesSec .allh1, .casesSec .allp", {
     y: -100,
     opacity: 0,
@@ -343,21 +345,41 @@ const casesAnimation = () => {
     },
   });
 
-  // if (Window.innerWidth < 767) {
+  // DESKTOP ALL CARDS ANIMATION
+  if (window.innerWidth > 767) {
     gsap.from(".mainCaseRow", {
-    opacity: 0,
-    y:50,
-    scale: 0.7,
-    scrollTrigger: {
-      trigger: ".casesSec",
-      scroller: "body",
-      top: "top 30%",
-      end: "top 10%",
-      scrub: 2,
-    },
-  });
-  // }  
+      opacity: 0,
+      y: 50,
+      scale: 0.7,
+      scrollTrigger: {
+        trigger: ".casesSec",
+        scroller: "body",
+        start: "top 30%",
+        end: "top 10%",
+        scrub: 2,
+      },
+    });
+  }
 
+  // MOBILE INDIVIDUAL ANIMATION
+  if (window.innerWidth < 768) {
+    [".Case1", ".Case2", ".Case3", ".Case4"].forEach((cls) => {
+      gsap.from(cls, {
+        opacity: 0,
+        y: 50,
+        scale: 0.7,
+        scrollTrigger: {
+          trigger: cls,
+          scroller: "body",
+          start: "top 60%",
+          end: "top 40%",
+          scrub: 2,
+        },
+      });
+    });
+  }
+
+  // 🔥 SLIDER ONLY FOR DESKTOP
   if (window.innerWidth > 767) {
     const track = document.querySelector(".caseTrack");
     const slides = document.querySelectorAll(".mainCaseRow");
@@ -371,33 +393,42 @@ const casesAnimation = () => {
       track.style.transform = `translateX(-${index * 100}%)`;
     }
 
-    // TOUCH / DRAG START
+    // START DRAG
     track.addEventListener("mousedown", (e) => {
       isDragging = true;
       startX = e.clientX;
+      track.style.cursor = "grabbing";
     });
 
+    // DRAG MOVE
     track.addEventListener("mousemove", (e) => {
       if (!isDragging) return;
       currentX = e.clientX;
     });
 
-    track.addEventListener("mouseup", () => {
+    // END DRAG
+    const endDrag = () => {
       if (!isDragging) return;
 
       let diff = startX - currentX;
 
-      if (diff > 50 && index < slides.length - 1) {
-        index++;
-      } else if (diff < -50 && index > 0) {
-        index--;
-      }
+      if (diff > 50) index++;
+      else if (diff < -50) index--;
+
+      // 🔁 LOOP
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
 
       updateSlide();
-      isDragging = false;
-    });
 
-    // MOBILE TOUCH
+      isDragging = false;
+      track.style.cursor = "grab";
+    };
+
+    track.addEventListener("mouseup", endDrag);
+    track.addEventListener("mouseleave", endDrag);
+
+    // TOUCH SUPPORT (optional desktop touchscreens)
     track.addEventListener("touchstart", (e) => {
       startX = e.touches[0].clientX;
     });
@@ -406,11 +437,11 @@ const casesAnimation = () => {
       let endX = e.changedTouches[0].clientX;
       let diff = startX - endX;
 
-      if (diff > 50 && index < slides.length - 1) {
-        index++;
-      } else if (diff < -50 && index > 0) {
-        index--;
-      }
+      if (diff > 50) index++;
+      else if (diff < -50) index--;
+
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
 
       updateSlide();
     });

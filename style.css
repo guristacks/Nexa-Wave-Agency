@@ -497,6 +497,7 @@ header.add .navRow {
 .caseTrack {
   display: flex;
   transition: transform 0.4s ease;
+  flex-direction: row;
 }
 .mainCaseRow {
   min-width: 100%;
@@ -546,7 +547,7 @@ header.add .navRow {
   font-size: 18px;
   font-weight: 600;
 }
-.swipe{
+.swipe {
   margin-top: 50px;
   gap: 20px;
   font-weight: 700;
@@ -1078,43 +1079,49 @@ footer {
   SECTION - 5 CASES 
   ------------------*/
 
-  .caseTrack {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  .caseSlider {
+    overflow: visible; /* scroll allow */
   }
+
+  .caseTrack {
+    flex-direction: column; /* vertical scroll */
+    gap: 50px;
+    transform: none !important; /* 🔥 IMPORTANT (JS override hatao) */
+  }
+
   .mainCaseRow {
     min-width: 100%;
     height: fit-content;
-    box-sizing: border-box;
     flex-direction: column;
     border: 1px solid #ffffff4f;
     border-radius: 8px;
-    gap: 0px;
     cursor: default;
   }
+
   .caseImgCol img {
     width: 100%;
     height: 270px;
     border-radius: 8px;
     object-fit: cover;
   }
+
   .caseTextCol h3 {
     font-size: 20px;
     font-weight: 500;
   }
+
   .caseTextCol h2 {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 0px;
   }
+
   .caseInnerCol p {
-    color: #fff;
     font-size: 18px;
-    font-weight: 500;
     line-height: 2rem;
   }
-  .swipe{
+
+  .swipe {
     display: none;
   }
 
