@@ -131,7 +131,7 @@ section {
 .allp {
   margin-bottom: 50px;
   font-size: clamp(16px, 16px, 16px);
-  line-height: clamp(1.5rem, 1.5rem, 1.5rem);
+  line-height: clamp(1.6rem, 1.6rem, 1.6rem);
   color: #ffffffaf;
   text-align: center;
 }
@@ -268,7 +268,7 @@ header.add .navRow {
   font-weight: 600;
 }
 .hero-content p {
-  font-size: clamp(14px, 16px, 16px);
+  font-size :16px;
   line-height: clamp(1.5rem, 1.5rem, 1.5rem);
   color: #ffffffaf;
 }
@@ -403,7 +403,7 @@ header.add .navRow {
   font-weight: 600;
 }
 .service-cont p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6rem;
   color: #e0e0e0;
 }
@@ -411,12 +411,13 @@ header.add .navRow {
   gap: 10px;
 }
 .service-tags p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   padding: 4px 12px;
   border: 1px solid #ffffff46;
   border-radius: 8px;
   width: fit-content;
+  line-height: 1.6rem;
 }
 
 /*----------------------
@@ -457,7 +458,7 @@ header.add .navRow {
   font-weight: 600;
 }
 .process p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6rem;
   margin-bottom: 20px;
   color: #e0e0e0;
@@ -517,8 +518,8 @@ header.add .navRow {
 }
 .box p {
   color: #d1d1d1;
-  line-height: 1.5rem;
-  font-size: 15px;
+  line-height: 1.6rem;
+  font-size: 16px;
 }
 
 /*------------------
