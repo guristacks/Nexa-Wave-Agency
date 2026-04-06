@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- TITLE -->
     <title>Nexa Wave Agency - Web Design, Development & Branding Experts</title>
@@ -11,11 +12,14 @@
     <!-- META DESCRIPTION TAG -->
     <meta name="description"
         content="Nexa Wave Agency delivers modern web design, development, and branding solutions to help businesses grow online with powerful and user-focused digital experiences.">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/webp" href="Images/Nexa-wave-favico.webp">
 
     <!-- CONNECT CSS FILE -->
+    <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
 
     <!-- FONT - MONTSERRAT -->
@@ -25,6 +29,9 @@
 
     <!-- CDN - REMIX ICON -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
     <!-- WEBSITE DOMAIN -->
     <link rel="canonical" href="https://nexa-wave-agency.vercel.app/">
@@ -33,24 +40,43 @@
     <meta property="og:title" content="Nexa Wave Agency">
     <meta property="og:description" content="Web Design, Development & Branding Experts">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexa-wave-agency.vercel.app/">
+    <meta property="og:site_name" content="Nexa Wave Agency">
+    <meta property="og:image" content="https://nexa-wave-agency.vercel.app/Images/Nexa-wave-favico.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nexa Wave Agency - Web Design, Development & Branding Experts">
+    <meta name="twitter:description" content="Nexa Wave Agency delivers modern web design, development, and branding solutions to help businesses grow online with powerful and user-focused digital experiences.">
+    <meta name="twitter:image" content="https://nexa-wave-agency.vercel.app/Images/Nexa-wave-favico.webp">
 
     <meta name="theme-color" content="#000000">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Nexa Wave Agency",
+            "url": "https://nexa-wave-agency.vercel.app/",
+            "logo": "https://nexa-wave-agency.vercel.app/Images/Nexa-wave-favico.webp",
+            "description": "Nexa Wave Agency delivers modern web design, development, and branding solutions to help businesses grow online with powerful and user-focused digital experiences."
+        }
+    </script>
 </head>
 
 <body>
 
-    <header class="flex ac">
+    <header class="flex ac" role="banner">
         <div class="container">
             <div class="row flex sb ac">
                 <div class="IconCol">
-                    <i class="ri-menu-4-line"></i>
-                    <i class="ri-close-large-fill"></i>
+                    <i class="ri-menu-4-line" role="button" tabindex="0" aria-label="Open menu"></i>
+                    <i class="ri-close-large-fill" role="button" tabindex="0" aria-label="Close menu"></i>
                 </div>
                 <div class="col flex ac">
                     <a class="logo" href="index.html">Nexa Wave</a>
                 </div>
                 <div class="col">
-                    <ul class="nav flex ac">
+                    <ul class="nav flex ac" role="navigation" aria-label="Primary">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -67,21 +93,21 @@
         </div>
     </header>
 
-    <main>
+    <main role="main">
         <!-- SECTION - 1 HERO -->
         <section id="hero" class="heroSec">
-            <div class="cursor"></div>
+            <div class="cursor" aria-hidden="true"></div>
             <div class="container">
                 <div class="hero-content flex ac jc f-clmn">
                     <p class="p1">Design • Development • Strategy</p>
                     <h1>Intelligent Automation for<br>Modern Businesses.</h1>
                     <p class="p2">Nexa wave brings AI automation to your fingertips & streamline tasks</p>
                     <div class="btn-set flex ac jc">
-                        <button class="blueBtn">
-                            <span class="text">Get in touch <i class="ri-arrow-right-up-long-line"></i></span>
-                            <span class="hover-text">Get in touch <i class="ri-arrow-right-long-line"></i></span>
+                        <button class="blueBtn" type="button" aria-label="Get in touch">
+                            <span class="text">Get in touch <i class="ri-arrow-right-up-long-line" aria-hidden="true"></i></span>
+                            <span class="hover-text">Get in touch <i class="ri-arrow-right-long-line" aria-hidden="true"></i></span>
                         </button>
-                        <button>
+                        <button type="button" aria-label="View services">
                             <span style="color: #000;" class="text">View Services</span>
                             <span style="color: #000;" class="hover-text">View Services</span>
                         </button>
@@ -98,41 +124,41 @@
                 <div class="outter flex ac">
                     <div class="track flex ac">
                         <div class="inner flex ac">
-                            <i class="ri-code-s-slash-fill"></i>
+                            <i class="ri-code-s-slash-fill" aria-hidden="true"></i>
                             <h3><b>Velora Systems</b></h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-issues-line"></i>
+                            <i class="ri-issues-line" aria-hidden="true"></i>
                             <h3>Quantix Labs</h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-git-repository-fill"></i>
+                            <i class="ri-git-repository-fill" aria-hidden="true"></i>
                             <h3><b>AetherWorks</b></h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-git-repository-private-line"></i>
+                            <i class="ri-git-repository-private-line" aria-hidden="true"></i>
                             <h3>Nexora Tech</h3>
                         </div>
                         <div class="inner flex ac">
-                            <i class="ri-puzzle-2-fill"></i>
+                            <i class="ri-puzzle-2-fill" aria-hidden="true"></i>
                             <h3><b>Lumicore Solutions</b></h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-command-line"></i>
+                            <i class="ri-command-line" aria-hidden="true"></i>
                             <h3>Zentrova AI</h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-bug-2-fill"></i>
+                            <i class="ri-bug-2-fill" aria-hidden="true"></i>
                             <h3><b>Orbyte Digital</b></h3>
                         </div>
 
                         <div class="inner flex ac">
-                            <i class="ri-remix-fill"></i>
+                            <i class="ri-remix-fill" aria-hidden="true"></i>
                             <h3>Synexis Group</h3>
                         </div>
                     </div>
@@ -156,7 +182,7 @@
                 <div class="serviceMainrow flex f-clmn">
                     <div class="Servicerow serv1 flex ac sb">
                         <div class="col service-video">
-                            <video autoplay muted loop playsinline
+                            <video autoplay muted loop playsinline preload="metadata"
                                 src="videos/Service-Sec/12442569_1920_1080_30fps.mp4">
                             </video>
                         </div>
@@ -176,7 +202,7 @@
 
                     <div class="Servicerow serv2 flex ac sb">
                         <div class="col service-video">
-                            <video autoplay muted loop playsinline src="videos/Service-Sec/14471420_1280_720_30fps.mp4">
+                            <video autoplay muted loop playsinline preload="metadata" src="videos/Service-Sec/14471420_1280_720_30fps.mp4">
                             </video>
                         </div>
                         <div class="service-cont col flex f-clmn">
@@ -196,7 +222,7 @@
 
                     <div class="Servicerow serv3 flex ac sb">
                         <div class="col service-video">
-                            <video autoplay muted loop playsinline
+                            <video autoplay muted loop playsinline preload="metadata"
                                 src="videos/Service-Sec/14674462_1920_1080_30fps.mp4">
                             </video>
                         </div>
@@ -216,7 +242,7 @@
 
                     <div class="Servicerow serv4 flex ac sb">
                         <div class="col service-video">
-                            <video autoplay muted loop playsinline
+                            <video autoplay muted loop playsinline preload="metadata"
                                 src="videos/Service-Sec/6994083_Ai_Robotics_1280x720.mp4">
                             </video>
                         </div>
@@ -256,7 +282,7 @@
                             <p>We assess your needs and identify AI solutions to streamline workflows and improve
                                 efficiency.</p>
                             <div class="process-video">
-                                <video autoplay loop muted playsinline webkit-playsinline
+                                <video autoplay loop muted playsinline webkit-playsinline preload="metadata"
                                     src="videos/Process-Sec/15406850_1920_1080_25fps.mp4"></video>
                             </div>
                         </div>
@@ -265,7 +291,7 @@
                             <h3>AI Development</h3>
                             <p>Our team builds intelligent automation systems tailored to your business processes.</p>
                             <div class="process-video">
-                                <video autoplay loop muted playsinline webkit-playsinline
+                                <video autoplay loop muted playsinline webkit-playsinline preload="metadata"
                                     src="videos/Process-Sec/15442047_1920_1080_25fps.mp4"></video>
                             </div>
                         </div>
@@ -278,7 +304,7 @@
                             <p>We smoothly integrate AI solutions into your existing infrastructure with minimal
                                 disruption.</p>
                             <div class="process-video">
-                                <video autoplay loop muted playsinline webkit-playsinline
+                                <video autoplay loop muted playsinline webkit-playsinline preload="metadata"
                                     src="videos/Process-Sec/19419586-hd_1920_1080_30fps.mp4"></video>
                             </div>
                         </div>
@@ -287,7 +313,7 @@
                             <h3>Continuous Optimization</h3>
                             <p>We refine performance, analyze insights, and enhance automation for long-term growth.</p>
                             <div class="process-video">
-                                <video autoplay loop muted playsinline webkit-playsinline
+                                <video autoplay loop muted playsinline webkit-playsinline preload="metadata"
                                     src="videos/Process-Sec/2792370-hd_1920_1080_30fps.mp4"></video>
                             </div>
                         </div>
@@ -312,7 +338,7 @@
                         <!-- CARD 1 -->
                         <div class="Case1 mainCaseRow flex sb">
                             <div class="caseImgCol">
-                                <img src="Images/Case-Sec/case-1.webp" />
+                                <img src="Images/Case-Sec/case-1.webp" alt="Case study visual 1" loading="lazy" decoding="async" />
                             </div>
 
                             <div class="caseTextCol flex f-clmn">
@@ -338,7 +364,7 @@
                         <!-- CARD 2 -->
                         <div class="Case2 mainCaseRow flex sb">
                             <div class="caseImgCol">
-                                <img src="Images/Case-Sec/case-2.webp" />
+                                <img src="Images/Case-Sec/case-2.webp" alt="TrailForge case study visual" loading="lazy" decoding="async" />
                             </div>
 
                             <div class="caseTextCol flex f-clmn">
@@ -363,7 +389,7 @@
                         <!-- CARD 3 -->
                         <div class="Case3 mainCaseRow flex sb">
                             <div class="caseImgCol">
-                                <img src="Images/Case-Sec/case-3.webp" />
+                                <img src="Images/Case-Sec/case-3.webp" alt="FitSphere case study visual" loading="lazy" decoding="async" />
                             </div>
 
                             <div class="caseTextCol flex f-clmn">
@@ -388,7 +414,7 @@
                         <!-- CARD 4 -->
                         <div class="Case4 mainCaseRow flex sb">
                             <div class="caseImgCol">
-                                <img src="Images/Case-Sec/case-4.webp" />
+                                <img src="Images/Case-Sec/case-4.webp" alt="ShopNova case study visual" loading="lazy" decoding="async" />
                             </div>
 
                             <div class="caseTextCol flex f-clmn">
@@ -415,7 +441,7 @@
                     </div>
                 </div>
                 <div class="swipe flex ac jc">
-                    <i class="ri-arrow-left-long-line"></i> Drag to Explore <i class="ri-arrow-right-long-line"></i>
+                    <i class="ri-arrow-left-long-line" aria-hidden="true"></i> Drag to Explore <i class="ri-arrow-right-long-line" aria-hidden="true"></i>
                 </div>
             </div>
         </section>
@@ -490,7 +516,7 @@
 
                     <div class="pricingMethod flex ac jc">
                         <span>Monthly</span>
-                        <div class="togglebtn">
+                        <div class="togglebtn" role="switch" tabindex="0" aria-label="Toggle pricing billing period" aria-checked="false">
                             <div class="white"></div>
                         </div>
                         <span>Anually</span>
@@ -500,47 +526,47 @@
 
                 <div class="range flex sb">
                     <div class="landing flex f-clmn">
-                        <p class="heading"><i class="ri-space-ship-2-line"></i> Starter</p>
+                        <p class="heading"><i class="ri-space-ship-2-line" aria-hidden="true"></i> Starter</p>
                         <h3 class="price"><span class="anually">$37</span><span
                                 class="monthly remove">$49</span><small>/month</small></h3>
                         <p class="description">Perfect for small businesses starting with AI automation.</p>
-                        <button>Choose this plan</button>
+                        <button type="button">Choose this plan</button>
                         <p class="sub-head">What's Included:</p>
 
-                        <h4><i class="ri-check-fill"></i> Basic workflow automation</h4>
-                        <h4><i class="ri-check-fill"></i> AI-powered personal assistant </h4>
-                        <h4><i class="ri-check-fill"></i> Standard analytics & reporting</h4>
-                        <h4><i class="ri-check-fill"></i> Email & chat support</h4>
-                        <h4><i class="ri-check-fill"></i> Up to 3 AI integrations</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Basic workflow automation</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> AI-powered personal assistant </h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Standard analytics & reporting</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Email & chat support</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Up to 3 AI integrations</h4>
                     </div>
 
                     <div class="elite flex f-clmn">
-                        <p class="heading"><i class="ri-flashlight-fill"></i> Professional</p>
+                        <p class="heading"><i class="ri-flashlight-fill" aria-hidden="true"></i> Professional</p>
                         <h3 class="price"><span class="anually">$75</span><span
                                 class="monthly remove">$99</span><small>/month</small></h3>
                         <p class="description">Best for premium brands & high-end projects</p>
-                        <button>Choose this plan</button>
+                        <button type="button">Choose this plan</button>
                         <p class="sub-head">What's Included:</p>
 
-                        <h4><i class="ri-check-fill"></i> Advanced workflow automation</h4>
-                        <h4><i class="ri-check-fill"></i> AI-driven sales & marketing tools</h4>
-                        <h4><i class="ri-check-fill"></i> Enhanced data analytics & insights</h4>
-                        <h4><i class="ri-check-fill"></i> Priority customer support</h4>
-                        <h4><i class="ri-check-fill"></i> Up to 10 AI integrations</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Advanced workflow automation</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> AI-driven sales & marketing tools</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Enhanced data analytics & insights</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Priority customer support</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Up to 10 AI integrations</h4>
                     </div>
 
                     <div class="custom flex f-clmn">
-                        <p class="heading"><i class="ri-vip-crown-2-fill"></i> Enterprise</p>
+                        <p class="heading"><i class="ri-vip-crown-2-fill" aria-hidden="true"></i> Enterprise</p>
                         <h3 class="price">Custom</h3>
                         <p class="description">Best for businesses needing flexibility & custom features</p>
-                        <button>Choose this plan</button>
+                        <button type="button">Choose this plan</button>
                         <p class="sub-head">What's Included:</p>
 
-                        <h4><i class="ri-check-fill"></i> Fully customizable AI automation</h4>
-                        <h4><i class="ri-check-fill"></i> Dedicated AI business consultant</h4>
-                        <h4><i class="ri-check-fill"></i> Enterprise-grade compliance</h4>
-                        <h4><i class="ri-check-fill"></i> 24/7 VIP support</h4>
-                        <h4><i class="ri-check-fill"></i> Unlimited AI integrations</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Fully customizable AI automation</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Dedicated AI business consultant</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Enterprise-grade compliance</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> 24/7 VIP support</h4>
+                        <h4><i class="ri-check-fill" aria-hidden="true"></i> Unlimited AI integrations</h4>
                     </div>
 
                 </div>
@@ -562,11 +588,11 @@
                 <div class="Reviewrow flex ac f-clmn">
                     <div class="reviews">
                         <div class="stars flex ac">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="msg">
@@ -578,7 +604,7 @@
                         <div class="Personrow flex ac">
                             <div class="col">
                                 <img src="Images/Testimonial-Sec/test-1.webp"
-                                    alt="Happy client sharing positive feedback about web design services">
+                                    alt="Happy client sharing positive feedback about web design services" loading="lazy" decoding="async">
                             </div>
                             <div class="Personcol flex f-clmn">
                                 <h3>Smith Williams</h3>
@@ -592,11 +618,11 @@
                 <div class="Reviewrow flex ac f-clmn">
                     <div class="reviews">
                         <div class="stars flex ac">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="msg">
@@ -607,7 +633,7 @@
                         <div class="Personrow flex ac">
                             <div class="col">
                                 <img src="Images/Testimonial-Sec/test-2.webp"
-                                    alt="Happy client sharing positive feedback about web design services">
+                                    alt="Happy client sharing positive feedback about web design services" loading="lazy" decoding="async">
                             </div>
                             <div class="Personcol flex f-clmn">
                                 <h3>Daniel Carter</h3>
@@ -620,11 +646,11 @@
                 <div class="Reviewrow flex ac f-clmn">
                     <div class="reviews">
                         <div class="stars flex ac">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="msg">
@@ -635,7 +661,7 @@
                         <div class="Personrow flex ac">
                             <div class="col">
                                 <img src="Images/Testimonial-Sec/test-3.webp"
-                                    alt="Happy client sharing positive feedback about web design services">
+                                    alt="Happy client sharing positive feedback about web design services" loading="lazy" decoding="async">
                             </div>
                             <div class="Personcol flex f-clmn">
                                 <h3>Olivia Brown</h3>
@@ -648,11 +674,11 @@
                 <div class="Reviewrow flex ac f-clmn">
                     <div class="reviews">
                         <div class="stars flex ac">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="msg">
@@ -663,7 +689,7 @@
                         <div class="Personrow flex ac">
                             <div class="col">
                                 <img src="Images/Testimonial-Sec/test-4.webp"
-                                    alt="Happy client sharing positive feedback about web design services">
+                                    alt="Happy client sharing positive feedback about web design services" loading="lazy" decoding="async">
                             </div>
                             <div class="Personcol flex f-clmn">
                                 <h3>Emily Johnson</h3>
@@ -681,11 +707,11 @@
                 <div class="Reviewrow2 flex ac f-clmn">
                     <div class="reviews">
                         <div class="stars flex ac">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="msg">
@@ -696,7 +722,7 @@
                         <div class="Personrow flex ac">
                             <div class="col">
                                 <img src="Images/Testimonial-Sec/test-5.webp"
-                                    alt="Happy client sharing positive feedback about web design services">
+                                    alt="Happy client sharing positive feedback about web design services" loading="lazy" decoding="async">
                             </div>
                             <div class="Personcol flex f-clmn">
                                 <h3>Noah Thompson</h3>
@@ -710,11 +736,11 @@
                 <div class="Reviewrow2 flex ac f-clmn">
                     <div class="reviews">
                         <div class="stars flex ac">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="msg">
@@ -725,7 +751,7 @@
                         <div class="Personrow flex ac">
                             <div class="col">
                                 <img src="Images/Testimonial-Sec/test-6.webp"
-                                    alt="Happy client sharing positive feedback about web design services">
+                                    alt="Happy client sharing positive feedback about web design services" loading="lazy" decoding="async">
                             </div>
                             <div class="Personcol flex f-clmn">
                                 <h3>Ava Wilson</h3>
@@ -738,11 +764,11 @@
                 <div class="Reviewrow2 flex ac f-clmn">
                     <div class="reviews">
                         <div class="stars flex ac">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="msg">
@@ -753,7 +779,7 @@
                         <div class="Personrow flex ac">
                             <div class="col">
                                 <img src="Images/Testimonial-Sec/test-7.webp"
-                                    alt="Happy client sharing positive feedback about web design services">
+                                    alt="Happy client sharing positive feedback about web design services" loading="lazy" decoding="async">
                             </div>
                             <div class="Personcol flex f-clmn">
                                 <h3>Ethan Miller</h3>
@@ -766,11 +792,11 @@
                 <div class="Reviewrow2 flex ac f-clmn">
                     <div class="reviews">
                         <div class="stars flex ac">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="msg">
@@ -781,7 +807,7 @@
                         <div class="Personrow flex ac">
                             <div class="col">
                                 <img src="Images/Testimonial-Sec/test-8.webp"
-                                    alt="Happy client sharing positive feedback about web design services">
+                                    alt="Happy client sharing positive feedback about web design services" loading="lazy" decoding="async">
                             </div>
                             <div class="Personcol flex f-clmn">
                                 <h3>Liam Anderson</h3>
@@ -897,9 +923,9 @@
                 <div class="promotion">
                     <h1 class="allh1">Let AI do the Work so <br>you can Scale Faster</h1>
                     <p>Book a Call Today and Start Automating</p>
-                    <button class="blueBtn">
-                        <span class="text">Book a free call <i class="ri-arrow-right-up-long-line"></i></span>
-                        <span class="hover-text">Book a free call <i class="ri-arrow-right-long-line"></i></span>
+                    <button class="blueBtn" type="button" aria-label="Book a free call">
+                        <span class="text">Book a free call <i class="ri-arrow-right-up-long-line" aria-hidden="true"></i></span>
+                        <span class="hover-text">Book a free call <i class="ri-arrow-right-long-line" aria-hidden="true"></i></span>
                     </button>
                 </div>
         </section>
@@ -911,7 +937,7 @@
             <div class="footer-main flex sb">
                 <div class="imgcol flex f-clmn">
                     <div class="flex ac">
-                        <img src="Images/Nexa-wave-favico.webp" alt="Logo">
+                        <img src="Images/Nexa-wave-favico.webp" alt="Nexa Wave logo" loading="lazy" decoding="async">
                         <a class="logo" href="index.html">Nexa Wave</a>
                     </div>
                     <p>Nexa Wave – Automate Smarter, Optimize <br> Faster, and Grow Stronger.</p>
@@ -920,9 +946,9 @@
                     <h2>Social Media</h2>
 
                     <div class="linkscol flex ac jc">
-                        <a href=""><i class="ri-instagram-line"></i></a>
-                        <a href=""><i class="ri-facebook-fill"></i></a>
-                        <a href=""><i class="ri-whatsapp-line"></i></a>
+                        <a href="" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+                        <a href="" aria-label="Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+                        <a href="" aria-label="WhatsApp"><i class="ri-whatsapp-line" aria-hidden="true"></i></a>
                     </div>
                 </div>
 
