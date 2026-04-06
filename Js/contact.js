@@ -156,9 +156,84 @@ const navBarAnimation = () => {
   });
 };
 
+const contactForm = () => {
+  const form = document.querySelector("#contactForm");
+  const submitBtn = document.querySelector("#submit");
+  const inputs = form.querySelectorAll("input, textarea");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let isValid = true;
+
+    inputs.forEach((input) => {
+      const value = input.value.trim();
+      const label = input.previousElementSibling;
+
+      // reset error state
+      input.classList.remove("error");
+      label.classList.remove("error");
+
+      // ❌ Empty check
+      if (value === "") {
+        input.classList.add("error");
+        label.classList.add("error");
+        isValid = false;
+      }
+
+      // ❌ Email validation
+      if (input.type === "email" && value !== "") {
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
+        if (!emailPattern.test(value)) {
+          input.classList.add("error");
+          label.classList.add("error");
+          isValid = false;
+        }
+      }
+
+      // ❌ Phone validation (10–15 digits)
+      if (input.type === "tel" && value !== "") {
+        const phonePattern = /^[0-9]{10,15}$/;
+        if (!phonePattern.test(value)) {
+          input.classList.add("error");
+          label.classList.add("error");
+          isValid = false;
+        }
+      }
+    });
+
+    // ❌ agar invalid hai toh yahi ruk jao
+    if (!isValid) return;
+
+    // ✅ agar sab valid hai tab submit animation
+    submitBtn.value = "Sending...";
+    submitBtn.disabled = true;
+
+    setTimeout(() => {
+      submitBtn.value = "Message Sent ✓";
+      form.reset();
+
+      setTimeout(() => {
+        submitBtn.value = "Submit";
+        submitBtn.disabled = false;
+      }, 2000);
+    }, 1000);
+  });
+
+  // ✅ live error remove (typing pe hi red hat jaaye)
+  inputs.forEach((input) => {
+    input.addEventListener("input", () => {
+      const label = input.previousElementSibling;
+      input.classList.remove("error");
+      label.classList.remove("error");
+    });
+  });
+};
+
 lenisAnimation();
 
 loadingAnimation();
 
 navBarAnimation();
 
+contactForm();

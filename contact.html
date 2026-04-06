@@ -78,39 +78,41 @@
                         we’ll be
                         in touch!</p>
                 </div>
-                <div class="form-content flex f-clmn">
-                    <div class="Namerow flex ac sb">
+                <form id="contactForm">
+                    <div class="form-content flex f-clmn">
+                        <div class="Namerow flex ac sb">
 
-                        <div class="col flex f-clmn">
-                            <label>First Name</label>
-                            <input placeholder="Jane" type="text">
+                            <div class="col flex f-clmn">
+                                <label>First Name</label>
+                                <input name="firstName" placeholder="Jane" type="text">
+                            </div>
+
+                            <div class="col flex f-clmn">
+                                <label>Last Name</label>
+                                <input name="lastName" placeholder="Smith" type="text">
+                            </div>
                         </div>
 
-                        <div class="col flex f-clmn">
-                            <label>Last Name</label>
-                            <input placeholder="Smith" type="text">
+                        <div class="Mailrow flex ac sb">
+                            <div class="col flex f-clmn">
+                                <label>Email</label>
+                                <input name="email" placeholder="jane@gmail.com" type="email">
+                            </div>
+
+                            <div class="col flex f-clmn">
+                                <label>Phone</label>
+                                <input name="phone" placeholder="+1(969) 819-8061" type="tel">
+                            </div>
                         </div>
+
+                        <div class="Msgrow flex f-clmn">
+                            <label>Message</label>
+                            <textarea name="message" placeholder="Hi, I am jane i want help with...."></textarea>
+                            <input id="submit" type="submit" value="Submit">
+                        </div>
+
                     </div>
-
-                    <div class="Mailrow flex ac sb">
-                        <div class="col flex f-clmn">
-                            <label>Email</label>
-                            <input placeholder="jane@gmail.com" type="email">
-                        </div>
-
-                        <div class="col flex f-clmn">
-                            <label>Phone</label>
-                            <input placeholder="+1(969) 819-8061" type="number">
-                        </div>
-                    </div>
-
-                    <div class="Msgrow flex f-clmn">
-                        <label>Message</label>
-                        <textarea placeholder="Hi, I am jane i want help with...."></textarea>
-                        <input id="submit" type="submit" value="Submit">
-                    </div>
-
-                </div>
+                </form>
             </div>
         </section>
     </main>
@@ -128,7 +130,7 @@
                 </div>
                 <div class="main-links flex f-clmn">
                     <h2>Social Media</h2>
-                    
+
                     <div class="linkscol flex ac jc">
                         <a href=""><i class="ri-instagram-line"></i></a>
                         <a href=""><i class="ri-facebook-fill"></i></a>

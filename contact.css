@@ -252,11 +252,24 @@ textarea {
   border-radius: 8px;
   color: #fff;
 }
+input.error,
+textarea.error {
+  border: 1px solid red;
+}
+label.error {
+  color: red;
+}
 #submit {
   background: #5960e8;
   color: #fff;
   transition: 0.3s ease;
   font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 #submit:active {
   transform: scale(0.9);
@@ -357,7 +370,7 @@ footer {
     gap: 20px;
     width: 100%;
   }
-  
+
   .allp {
     margin-bottom: 70px;
     font-size: clamp(16px, 16px, 16px);
@@ -409,7 +422,6 @@ footer {
     padding: 20px 0px;
   }
 }
-
 
 @media (min-width: 767px) and (max-width: 1024px) {
   /*------
