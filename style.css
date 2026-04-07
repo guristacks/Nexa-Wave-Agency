@@ -1109,9 +1109,9 @@ footer {
   }
 
   .caseTrack {
-    flex-direction: column; /* vertical scroll */
+    flex-direction: column;
     gap: 50px;
-    transform: none !important; /* 🔥 IMPORTANT (JS override hatao) */
+    transform: none !important;
   }
 
   .mainCaseRow {

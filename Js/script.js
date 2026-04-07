@@ -133,7 +133,7 @@ const navBarAnimation = () => {
 
   // OPEN MENU
   const openMenu = (e) => {
-    e.stopPropagation(); // important
+    e.stopPropagation();
     header.classList.add("add");
     menuBtn.style.display = "none";
     closeBtn.style.display = "block";
