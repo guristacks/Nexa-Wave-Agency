@@ -11,7 +11,7 @@ The website includes multiple pages such as Home, About and Contact — making i
 
 ## ⭐ Disclaimer
 
-This project is created for educational and portfolio purposes only.  
+This project is created for educational and portfolio purposes only.
 It is not associated with any real agency.
 
 ---
