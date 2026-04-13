@@ -193,44 +193,39 @@ const contactForm = () => {
 
     inputs.forEach((input) => {
       const value = input.value.trim();
-      const label = input.previousElementSibling;
 
-      // reset error state
+      // RESET ERROR STATE
       input.classList.remove("error");
-      label.classList.remove("error");
 
-      // ❌ Empty check
+      // ❌ EMPTY CHECK
       if (value === "") {
         input.classList.add("error");
-        label.classList.add("error");
         isValid = false;
       }
 
-      // ❌ Email validation
+      // ❌ EMAIL VALIDATION
       if (input.type === "email" && value !== "") {
         const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
         if (!emailPattern.test(value)) {
           input.classList.add("error");
-          label.classList.add("error");
           isValid = false;
         }
       }
 
-      // ❌ Phone validation (10–15 digits)
+      // ❌ PHONE VALIDATION (10 - 15 DIGITS)
       if (input.type === "tel" && value !== "") {
         const phonePattern = /^[0-9]{10,15}$/;
         if (!phonePattern.test(value)) {
           input.classList.add("error");
-          label.classList.add("error");
           isValid = false;
         }
       }
     });
 
-    // ❌ agar invalid hai toh yahi ruk jao
+    // ❌ IF INVALID STOPS HERE
     if (!isValid) return;
 
-    // ✅ agar sab valid hai tab submit animation
+    // ✅ IF VALID THEN PERFORM SUBMIT ANIMATION
     submitBtn.value = "Sending...";
     submitBtn.disabled = true;
 
@@ -245,12 +240,11 @@ const contactForm = () => {
     }, 1000);
   });
 
-  // ✅ live error remove (typing pe hi red hat jaaye)
+  // ✅ LIVE ERROR REMOVED (REMOVE RED BORDER WHILE TYPING)
   inputs.forEach((input) => {
     input.addEventListener("input", () => {
       const label = input.previousElementSibling;
       input.classList.remove("error");
-      label.classList.remove("error");
     });
   });
 };
