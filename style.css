@@ -193,12 +193,14 @@ header {
   gap: 15px;
 }
 .nav li {
-  padding: 10px 15px;
   font-size: 14px;
   transition: 0.3s ease;
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
+}
+.nav li a{
+  padding: 10px 15px;
 }
 .nav li:hover {
   color: #ffffff;
@@ -439,7 +441,7 @@ header.add .navRow {
 .service-tags p {
   font-size: 16px;
   font-weight: 500;
-  padding: 4px 12px;
+  padding: 4px 7px;
   border: 1px solid #ffffff46;
   border-radius: 8px;
   width: fit-content;
