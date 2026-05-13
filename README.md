@@ -78,7 +78,8 @@ This website is optimized to deliver fast, smooth, and efficient performance acr
 - `React.js`
 - `GSAP`  
 - `Lenis` 
-- `Git & Github` 
+- `Git & Github`
+- `Deployment`
 
 ---
 
