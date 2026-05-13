@@ -14,10 +14,6 @@ The website includes multiple pages such as Home, About and Contact — making i
 This project is created for educational and portfolio purposes only.
 It is not associated with any real agency.
 
----
-
-## 🎯 Project Purpose
-
 This project is created as a portfolio piece to showcase frontend development skills, UI/UX design sense, and the ability to build modern, high-performance multi-page websites.
 
 ---
@@ -68,26 +64,32 @@ This website is optimized to deliver fast, smooth, and efficient performance acr
 
 ## 👨‍💻 About Developer
 
-**Name:** Gurwinder Singh (Guri Ghumaan)<br>
-**Role:** Frontend Web Developer<br>
-**Focus:** Creating modern, interactive, and performance-driven web experiences
+**Name :** Gurwinder Singh (Guri Ghumaan)<br>
+**Role :** Frontend Web Developer<br>
+**Focus :** Creating modern, interactive, and performance-driven web experiences
 
 ---
 
 ## 🛠️ Tech Stack
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- GSAP (for animations)  
-- Lenis (for smooth scrolling)  
+- `HTML5`  
+- `CSS3`  
+- `JavaScript`  
+- `React.js`
+- `GSAP`  
+- `Lenis` 
+- `Git & Github` 
 
 ---
 
 ## 📬 Contact
 
-- GitHub: https://github.com/guristacks  
-- LinkedIn: https://www.linkedin.com/in/guristacks  
+If you're looking for a modern website, landing page, or interactive frontend experience, feel free to reach out.
+
+- **GitHub :** https://github.com/guristacks  
+- **LinkedIn :** https://www.linkedin.com/in/guristacks
+- **Email :** [guristacks@gmail.com](mailto:guristacks@gmail.com)
+- **Instagram :** https://www.instagram.com/guri_ghumxn 
 
 ---
 
