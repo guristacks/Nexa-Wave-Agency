@@ -1,4 +1,4 @@
-# 🚀 NexaWave Agency
+# 🚀 Nexa Wave Agency
 
 NexaWave Agency is a modern and dynamic **multi-page website** designed for a software and digital agency.  
 This project features a clean UI, smooth animations, and a strong visual hierarchy to create a professional and engaging user experience.
